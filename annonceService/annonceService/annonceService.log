@@ -1,0 +1,75 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.example:annonceService >---------------------
+[INFO] Building annonceService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ annonceService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ annonceService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ annonceService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ annonceService ---
+[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/annonceService/annonceService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ annonceService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ annonceService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.0:run (default-cli) @ annonceService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.0)
+
+2025-12-19T23:24:56.924+01:00  INFO 38500 --- [annonceService] [           main] o.e.a.AnnonceServiceApplication          : Starting AnnonceServiceApplication using Java 17.0.17 with PID 38500 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/annonceService/annonceService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/annonceService/annonceService)
+2025-12-19T23:24:56.926+01:00  INFO 38500 --- [annonceService] [           main] o.e.a.AnnonceServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-12-19T23:24:57.434+01:00  INFO 38500 --- [annonceService] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19T23:24:57.529+01:00  INFO 38500 --- [annonceService] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2025-12-19T23:24:57.652+01:00  INFO 38500 --- [annonceService] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4212ca3f-e79e-3e46-83ae-3b535c211120
+2025-12-19T23:24:57.843+01:00  INFO 38500 --- [annonceService] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9094 (http)
+2025-12-19T23:24:57.849+01:00  INFO 38500 --- [annonceService] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-19T23:24:57.850+01:00  INFO 38500 --- [annonceService] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-19T23:24:57.889+01:00  INFO 38500 --- [annonceService] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 920 ms
+2025-12-19T23:24:57.982+01:00  INFO 38500 --- [annonceService] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-19T23:24:58.006+01:00  INFO 38500 --- [annonceService] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-19T23:24:58.220+01:00  INFO 38500 --- [annonceService] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19T23:24:58.235+01:00  INFO 38500 --- [annonceService] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-19T23:24:58.409+01:00  INFO 38500 --- [annonceService] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3205610d
+2025-12-19T23:24:58.410+01:00  INFO 38500 --- [annonceService] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-19T23:24:58.438+01:00  WARN 38500 --- [annonceService] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-19T23:24:58.449+01:00  INFO 38500 --- [annonceService] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/annonce_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: annonce_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-19T23:24:58.512+01:00  WARN 38500 --- [annonceService] [           main] org.hibernate.orm.deprecation            : HHH90000033: Encountered use of deprecated annotation [interface jakarta.persistence.Temporal] at org.example.annonceservice.Entity.Annonce.requestDate.
+2025-12-19T23:24:58.996+01:00  INFO 38500 --- [annonceService] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-19T23:24:59.038+01:00  INFO 38500 --- [annonceService] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19T23:24:59.084+01:00  INFO 38500 --- [annonceService] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19T23:24:59.220+01:00  WARN 38500 --- [annonceService] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19T23:24:59.661+01:00  INFO 38500 --- [annonceService] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2025-12-19T23:24:59.678+01:00  WARN 38500 --- [annonceService] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-19T23:24:59.703+01:00  INFO 38500 --- [annonceService] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9094 (http) with context path '/'
+2025-12-19T23:24:59.712+01:00  INFO 38500 --- [annonceService] [           main] o.e.a.AnnonceServiceApplication          : Started AnnonceServiceApplication in 3.042 seconds (process running for 3.392)
+2025-12-19T23:27:53.338+01:00  WARN 38500 --- [annonceService] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s804ms).

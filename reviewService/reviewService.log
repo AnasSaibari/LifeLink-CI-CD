@@ -1,0 +1,103 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.app:reviewService >------------------------
+[INFO] Building reviewService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ reviewService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ reviewService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ reviewService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ reviewService ---
+[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ reviewService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ reviewService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.0:run (default-cli) @ reviewService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.0)
+
+2025-12-19T23:24:56.783+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.a.r.ReviewServiceApplication           : Starting ReviewServiceApplication using Java 17.0.17 with PID 38497 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService)
+2025-12-19T23:24:56.786+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.a.r.ReviewServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-12-19T23:24:56.829+01:00  INFO 38497 --- [reviewService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-19T23:24:56.829+01:00  INFO 38497 --- [reviewService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-19T23:24:57.373+01:00  INFO 38497 --- [reviewService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19T23:24:57.456+01:00  INFO 38497 --- [reviewService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2025-12-19T23:24:57.604+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1cfaf71e-a7dd-35d5-9747-2c8fdd0154c7
+2025-12-19T23:24:57.867+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
+2025-12-19T23:24:57.877+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-19T23:24:57.877+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-19T23:24:57.898+01:00  INFO 38497 --- [reviewService] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1069 ms
+2025-12-19T23:24:57.991+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-19T23:24:58.017+01:00  INFO 38497 --- [reviewService] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-19T23:24:58.236+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19T23:24:58.253+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-19T23:24:58.424+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57fae9c8
+2025-12-19T23:24:58.425+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-19T23:24:58.453+01:00  WARN 38497 --- [reviewService] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-19T23:24:58.462+01:00  INFO 38497 --- [reviewService] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/review_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: review_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-19T23:24:58.999+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-19T23:24:59.039+01:00  INFO 38497 --- [reviewService] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19T23:24:59.084+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19T23:24:59.452+01:00  WARN 38497 --- [reviewService] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19T23:24:59.774+01:00  INFO 38497 --- [reviewService] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2025-12-19T23:24:59.852+01:00  WARN 38497 --- [reviewService] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-19T23:24:59.873+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-19T23:24:59.884+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-19T23:24:59.885+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-19T23:25:00.001+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-19T23:25:00.002+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-19T23:25:00.003+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-19T23:25:00.004+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1766183100003 with initial instances count: 0
+2025-12-19T23:25:00.006+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEWSERVICE with eureka with status UP
+2025-12-19T23:25:00.006+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1766183100006, current=UP, previous=STARTING]
+2025-12-19T23:25:00.007+01:00  INFO 38497 --- [reviewService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEWSERVICE/192.168.1.2:reviewService:9095: registering service...
+2025-12-19T23:25:00.015+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
+2025-12-19T23:25:00.016+01:00  INFO 38497 --- [reviewService] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
+2025-12-19T23:25:00.026+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.a.r.ReviewServiceApplication           : Started ReviewServiceApplication in 3.519 seconds (process running for 3.996)
+2025-12-19T23:25:00.042+01:00  INFO 38497 --- [reviewService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEWSERVICE/192.168.1.2:reviewService:9095 - registration status: 204
+2025-12-19T23:25:30.005+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-19T23:25:30.006+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-19T23:25:30.026+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-19T23:27:53.347+01:00  WARN 38497 --- [reviewService] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s805ms).
