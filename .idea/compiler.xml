@@ -9,7 +9,7 @@
         <module name="discoveryService" />
         <module name="gatewayService" />
       </profile>
-      <profile name="Annotation profile for donationService" enabled="true">
+      <profile name="Annotation profile for userService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,6 +20,7 @@
         </processorPath>
         <module name="locationService" />
         <module name="hospitalService" />
+        <module name="reviewService" />
         <module name="donationService" />
         <module name="annonceService" />
         <module name="userService" />

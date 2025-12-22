@@ -1,0 +1,1113 @@
+{
+	"info": {
+		"_postman_id": "9c0251e8-5353-43ff-af51-41dc8c3e30f7",
+		"name": "BLOOD_APP Copy 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46348296",
+		"_collection_link": "https://anas-4269989.postman.co/workspace/ANAS's-Workspace~71c68787-7b2c-4676-8b18-c2aff2e89148/collection/46348296-9c0251e8-5353-43ff-af51-41dc8c3e30f7?action=share&source=collection_link&creator=46348296"
+	},
+	"item": [
+		{
+			"name": "userService",
+			"item": [
+				{
+					"name": "GET ALL Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJURVNUQFRFU1QuQ09NIiwiaWF0IjoxNzY1NDk0NTI4LCJleHAiOjE3NjU1ODA5Mjh9.OreT0Spd9KQhVFZq5WGp989ODzGGHEtDVv7O2ILiLwo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET User By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJURVNUQFRFU1QuQ09NIiwiaWF0IjoxNzY1NDk0NTI4LCJleHAiOjE3NjU1ODA5Mjh9.OreT0Spd9KQhVFZq5WGp989ODzGGHEtDVv7O2ILiLwo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST (Login)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailOrUsername\": \"TEST@TEST.COM\",\r\n    \"password\": \"TESTPWD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"username\": \"TEST\",\r\n        \"address\": \"ADDRESSTEST\",\r\n        \"role\": \"U\",\r\n        \"bloodType\": \"A+\",\r\n        \"score\": 3.0,\r\n        \"email\": \"anassaibari11@gmail.com\",\r\n        \"password\": \"1234\",\r\n        \"phoneNumber\": 600000000,\r\n        \"sex\": \"MALE\",\r\n        \"hospitalId\": 3,\r\n        \"villeId\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Update User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vérification de l'email (send)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJhbmFzc2FpYmFyaTExQGdtYWlsLmNvbSIsImlhdCI6MTc2NjM2MjE3OCwiZXhwIjoxNzY2NDQ4NTc4fQ.4uA5juDhrS-sskyJhYn2V4zxTRBOvMzaSnDT7PQ2Ah8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9091/api/email-verification/send?email=anassaibari11@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"api",
+								"email-verification",
+								"send"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "anassaibari11@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vérification de l'email (verify)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9091/api/email-verification/verify?email=anassaibari11@gmail.com&code=903160",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"api",
+								"email-verification",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "anassaibari11@gmail.com"
+								},
+								{
+									"key": "code",
+									"value": "903160"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "annonceService",
+			"item": [
+				{
+					"name": "GET Annonces",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJURVNUQFRFU1QuQ09NIiwiaWF0IjoxNzY1NDk0NTI4LCJleHAiOjE3NjU1ODA5Mjh9.OreT0Spd9KQhVFZq5WGp989ODzGGHEtDVv7O2ILiLwo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/annonces",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Annonce By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/annonces/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create Annonce",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titre\": \"Titre2\",\r\n    \"description\": \"Desc2\",\r\n    \"hospital\": \"AKDITAL\",\r\n    \"bloodType\": \"O+\",\r\n    \"urgentLevel\": 4,\r\n    \"quantity\": 5,\r\n    \"contactNumber\": \"0643526888\",\r\n    \"status\": \"Urgent\",\r\n    \"postType\": \"Besoin\",\r\n    \"requestDate\": \"2025-12-12T21:49:30.000Z\",\r\n    \"userId\": 25,\r\n    \"locationId\": 11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/annonces",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Update Annonce",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"titre\": \"Titre2\",\r\n    \"description\": \"Desc2\",\r\n    \"bloodType\": \"O+\",\r\n    \"contactNumber\": \"0643526889\",\r\n    \"locationId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/annonces/2/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces",
+								"2",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Annonce",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/annonces/2/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces",
+								"2",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH By Blood Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJURVNUQFRFU1QuQ09NIiwiaWF0IjoxNzY1NDk0NTI4LCJleHAiOjE3NjU1ODA5Mjh9.OreT0Spd9KQhVFZq5WGp989ODzGGHEtDVv7O2ILiLwo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/annonces/search/bloodType/A+",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces",
+								"search",
+								"bloodType",
+								"A+"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH By Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJURVNUQFRFU1QuQ09NIiwiaWF0IjoxNzY1NDk0NTI4LCJleHAiOjE3NjU1ODA5Mjh9.OreT0Spd9KQhVFZq5WGp989ODzGGHEtDVv7O2ILiLwo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/annonces/search/status/Urgent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces",
+								"search",
+								"status",
+								"Urgent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH By Location Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJURVNUQFRFU1QuQ09NIiwiaWF0IjoxNzY1NDk0NTI4LCJleHAiOjE3NjU1ODA5Mjh9.OreT0Spd9KQhVFZq5WGp989ODzGGHEtDVv7O2ILiLwo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/annonces/search/location/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"annonces",
+								"search",
+								"location",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "locationService",
+			"item": [
+				{
+					"name": "GET All Locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Location By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/location/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"location",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hospitalService",
+			"item": [
+				{
+					"name": "GET All Hospitals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/hospital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"hospital"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Hospital By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/hospital/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"hospital",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create a Hospital",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_nom\": \"SBOU\",\r\n        \"hospital_num\": \"SBOU123\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/hospital",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"hospital"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Update an Hospital",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_num\": \"SBOU1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/hospital/4/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"hospital",
+								"4",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE an Hospital",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_num\": \"SBOU1234\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8888/hospital/4/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"hospital",
+								"4",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reviewService",
+			"item": [
+				{
+					"name": "GET All Reviews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_nom\": \"SBOU\",\r\n        \"hospital_num\": \"SBOU123\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Reviews By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_nom\": \"SBOU\",\r\n        \"hospital_num\": \"SBOU123\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/reviews/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"reviews",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Reviews By Id User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_nom\": \"SBOU\",\r\n        \"hospital_num\": \"SBOU123\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/reviews/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"reviews",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET average rating for a user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_nom\": \"SBOU\",\r\n        \"hospital_num\": \"SBOU123\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/reviews/user/1/average",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"reviews",
+								"user",
+								"1",
+								"average"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET average rating for all users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"hospital_nom\": \"SBOU\",\r\n        \"hospital_num\": \"SBOU123\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/reviews/average",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"reviews",
+								"average"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST create a review",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\": 5.0,\r\n    \"userId\": 25\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "donationService",
+			"item": [
+				{
+					"name": "Create Donation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJhbmFzc2FpYmFyaTExQGdtYWlsLmNvbSIsImlhdCI6MTc2NjM2MjE3OCwiZXhwIjoxNzY2NDQ4NTc4fQ.4uA5juDhrS-sskyJhYn2V4zxTRBOvMzaSnDT7PQ2Ah8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 2,\r\n  \"annonceId\": 2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/donations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Donnations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJhbmFzc2FpYmFyaTExQGdtYWlsLmNvbSIsImlhdCI6MTc2NjM2MjE3OCwiZXhwIjoxNzY2NDQ4NTc4fQ.4uA5juDhrS-sskyJhYn2V4zxTRBOvMzaSnDT7PQ2Ah8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 1,\r\n  \"annonceId\": 1\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/donations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Donation By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJhbmFzc2FpYmFyaTExQGdtYWlsLmNvbSIsImlhdCI6MTc2NjM2MjE3OCwiZXhwIjoxNzY2NDQ4NTc4fQ.4uA5juDhrS-sskyJhYn2V4zxTRBOvMzaSnDT7PQ2Ah8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 1,\r\n  \"annonceId\": 1\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/donations/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Donation By User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/donations/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirmer Donation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/donations/5/confirm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations",
+								"5",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Confirmed Donations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/api/donations/confirmed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations",
+								"confirmed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Total Confirmed Donations By UserId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJhbmFzc2FpYmFyaTExQGdtYWlsLmNvbSIsImlhdCI6MTc2NjM2MjE3OCwiZXhwIjoxNzY2NDQ4NTc4fQ.4uA5juDhrS-sskyJhYn2V4zxTRBOvMzaSnDT7PQ2Ah8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 1,\r\n  \"annonceId\": 1\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/donations/stats/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations",
+								"stats",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Total Confirmed Donations By annonceId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJhbmFzc2FpYmFyaTExQGdtYWlsLmNvbSIsImlhdCI6MTc2NjM2MjE3OCwiZXhwIjoxNzY2NDQ4NTc4fQ.4uA5juDhrS-sskyJhYn2V4zxTRBOvMzaSnDT7PQ2Ah8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 1,\r\n  \"annonceId\": 1\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/donations/stats/annonce/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations",
+								"stats",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Total Confirmed Donations By Annonce.hospitalId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVSIsImlkIjoxLCJ1c2VybmFtZSI6IlRFU1QiLCJzdWIiOiJhbmFzc2FpYmFyaTExQGdtYWlsLmNvbSIsImlhdCI6MTc2NjM2MjE3OCwiZXhwIjoxNzY2NDQ4NTc4fQ.4uA5juDhrS-sskyJhYn2V4zxTRBOvMzaSnDT7PQ2Ah8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 1,\r\n  \"annonceId\": 1\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8888/api/donations/stats/hospital/annonce/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"donations",
+								"stats",
+								"hospital",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
