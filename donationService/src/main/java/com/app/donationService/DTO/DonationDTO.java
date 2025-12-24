@@ -52,8 +52,18 @@ public class DonationDTO{
         private Integer quantity;
         private Date requestDate;
         private Integer hospitalId;
-    }
 
+        @JsonProperty("hospital")
+        private HospitalInfo hospital;
+        @Data
+        @AllArgsConstructor
+        @NoArgsConstructor
+        public static class HospitalInfo {
+            private Long id;
+            private String hospital_nom;
+            private String hospital_num;
+        }
+    }
 
 
 }

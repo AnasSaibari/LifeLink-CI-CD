@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface AnnonceClient {
 
     @GetMapping("{id}")
-    DonationDTO.annonceInfo getAnnonceById(@PathVariable Long id);
+    AnnonceDTO getAnnonceById(@PathVariable Long id);
 }

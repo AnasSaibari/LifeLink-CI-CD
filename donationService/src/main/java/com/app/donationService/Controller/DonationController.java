@@ -63,6 +63,25 @@ public class DonationController {
         return ResponseEntity.ok(donations);
     }
 
+    /* =====================================================
+       GET All Donations by Annoce.HospitalId
+       ===================================================== */
+    @GetMapping("/hospital/{hospitalId}")
+    public ResponseEntity<List<DonationDTO>> getDonationsByHospitalId(@PathVariable Integer hospitalId) {
+        List<DonationDTO> donations = donationService.getDonationsByHospitalId(hospitalId);
+        return ResponseEntity.ok(donations);
+    }
+
+    /* =====================================================
+       DELETE supprimer Donation by ID
+       ===================================================== */
+    @DeleteMapping("/{id}")
+    public ResponseEntity<DonationDTO> deleteDonationById(@PathVariable Long id) {
+        donationService.deleteDonationById(id);
+        return ResponseEntity.ok(new DonationDTO());
+    }
+
+
 
     /* =====================================================
        GET Confirmed Donation

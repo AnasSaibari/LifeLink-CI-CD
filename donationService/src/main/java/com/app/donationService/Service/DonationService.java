@@ -1,5 +1,6 @@
 package com.app.donationService.Service;
 
+import com.app.donationService.DTO.AnnonceDTO;
 import com.app.donationService.DTO.DonationDTO;
 import com.app.donationService.Entity.Donation;
 import com.app.donationService.FeignClient.AnnonceClient;
@@ -33,22 +34,64 @@ public class DonationService {
     }
 
     /* =====================================================
-       CREATE Donation
-       Client envoie : userId + annonceId
-       ===================================================== */
+   CREATE Donation
+   Client envoie : userId + annonceId
+   Vérifie : groupe sanguin + pas de donation en double
+   ===================================================== */
     public DonationDTO createDonation(DonationDTO donationDTO) {
 
+        // 1. Vérifier si l'utilisateur a déjà fait une donation pour cette annonce
+        boolean alreadyDonated = donationRepository.existsByUserIdAndAnnonceId(
+                donationDTO.getUserId(),
+                donationDTO.getAnnonceId()
+        );
+
+        if (alreadyDonated) {
+            throw new RuntimeException(
+                    String.format("Vous avez déjà postulé pour cette annonce (Annonce ID: %d)",
+                            donationDTO.getAnnonceId())
+            );
+        }
+
+        // 2. Enrichir pour récupérer les infos complètes
+        Donation tempDonation = donationMapper.toEntity(donationDTO);
+        DonationDTO enrichedDTO = enrichDonation(tempDonation);
+
+        // 3. Vérifier que les données sont présentes
+        if (enrichedDTO.getUser() == null || enrichedDTO.getUser().getBloodType() == null) {
+            throw new RuntimeException("Impossible de récupérer les informations de l'utilisateur");
+        }
+
+        if (enrichedDTO.getAnnonce() == null || enrichedDTO.getAnnonce().getBloodType() == null) {
+            throw new RuntimeException("Impossible de récupérer les informations de l'annonce");
+        }
+
+        // 4. Vérifier que le groupe sanguin correspond exactement
+        String userBloodType = enrichedDTO.getUser().getBloodType().trim().toUpperCase();
+        String annonceBloodType = enrichedDTO.getAnnonce().getBloodType().trim().toUpperCase();
+
+        if (!userBloodType.equals(annonceBloodType)) {
+            throw new RuntimeException(
+                    String.format("Groupe sanguin incompatible : Vous êtes %s, l'annonce demande %s",
+                            userBloodType, annonceBloodType)
+            );
+        }
+
+        // 5. Créer la donation
         donationDTO.setApplicationDate(LocalDateTime.now());
         donationDTO.setConfirmed(false);
 
         Donation donation = donationMapper.toEntity(donationDTO);
         Donation savedDonation = donationRepository.save(donation);
 
-        log.info("Donation créée avec succès (id={})", savedDonation.getId());
+        log.info("Donation créée avec succès (id={}) - User: {}, Annonce: {}, Type sanguin: {}",
+                savedDonation.getId(),
+                donationDTO.getUserId(),
+                donationDTO.getAnnonceId(),
+                userBloodType);
 
         return enrichDonation(savedDonation);
     }
-
     /* =====================================================
        GET all Donations (avec user + annonce)
        ===================================================== */
@@ -72,6 +115,32 @@ public class DonationService {
     }
 
     /* =====================================================
+       GET All Donations by Annonce.HospitalId
+       ===================================================== */
+    public List<DonationDTO> getDonationsByHospitalId(Integer hospitalId) {
+        List<Donation> donations = donationRepository.findAll();
+
+        // enrichir et filtrer
+        List<DonationDTO> result = donations.stream()
+                .map(this::enrichDonation)
+                .filter(dto ->
+                        dto.getAnnonce() != null
+                                && dto.getAnnonce().getHospitalId() != null
+                                && dto.getAnnonce().getHospitalId().equals(hospitalId)
+                )
+                .toList();
+
+        if (result.isEmpty()) {
+            throw new RuntimeException(
+                    "Aucune donation trouvée pour l'hôpital ID = " + hospitalId
+            );
+        }
+
+        return result;
+    }
+
+
+    /* =====================================================
        GET Donation by User ID
        ===================================================== */
     public List<DonationDTO> getDonationsByUserId(Long userId) {
@@ -84,6 +153,13 @@ public class DonationService {
         return donations.stream()
                 .map(this::enrichDonation)
                 .toList();
+    }
+
+    /* =====================================================
+       DELETE supprimer Donation by ID
+       ===================================================== */
+    public void deleteDonationById(Long id) {
+        donationRepository.deleteById(id);
     }
 
 
@@ -122,7 +198,7 @@ public class DonationService {
 
         DonationDTO dto = donationMapper.toDto(donation);
 
-        // -------- User MS --------
+        // -------- USER MS --------
         try {
             DonationDTO.userInfo user =
                     userClient.getUserById(dto.getUserId());
@@ -131,17 +207,48 @@ public class DonationService {
             log.warn("Utilisateur {} introuvable", dto.getUserId());
         }
 
-        // -------- Annonce MS --------
+        // -------- ANNONCE MS --------
         try {
-            DonationDTO.annonceInfo annonce =
+            // Feign retourne AnnonceDTO (du AnnonceService)
+            AnnonceDTO annonceDTO =
                     annonceClient.getAnnonceById(dto.getAnnonceId());
-            dto.setAnnonce(annonce);
+
+            // Mapping vers DonationDTO.annonceInfo
+            DonationDTO.annonceInfo annonceInfo =
+                    new DonationDTO.annonceInfo();
+
+            annonceInfo.setId(Long.valueOf(annonceDTO.getId()));
+            annonceInfo.setDescription(annonceDTO.getDescription());
+            annonceInfo.setBloodType(annonceDTO.getBloodType());
+            annonceInfo.setQuantity(annonceDTO.getQuantity());
+            annonceInfo.setRequestDate(annonceDTO.getRequestDate());
+            annonceInfo.setHospitalId(annonceDTO.getHospitalId());
+
+            // ⭐ MAPPING CORRECT DE L’HÔPITAL ⭐
+            if (annonceDTO.getHospital() != null) {
+                DonationDTO.annonceInfo.HospitalInfo hospital =
+                        new DonationDTO.annonceInfo.HospitalInfo();
+
+                hospital.setId(annonceDTO.getHospital().getId());
+                hospital.setHospital_nom(
+                        annonceDTO.getHospital().getHospital_nom()
+                );
+                hospital.setHospital_num(
+                        annonceDTO.getHospital().getHospital_num()
+                );
+
+                annonceInfo.setHospital(hospital);
+            }
+
+            dto.setAnnonce(annonceInfo);
+
         } catch (Exception e) {
             log.warn("Annonce {} introuvable", dto.getAnnonceId());
         }
 
         return dto;
     }
+
 
     public long countConfirmedDonationsByAnnonceHospital(Long hospitalId) {
         // 1️⃣ Récupérer toutes les donations confirmées
