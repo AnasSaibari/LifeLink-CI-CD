@@ -32,6 +32,12 @@ public class AnnonceController {
         return ResponseEntity.ok(service.getById(id));
     }
 
+    @GetMapping("/hospital/{id}")
+    public ResponseEntity<List<AnnonceDTO>> getByHospitalId(@PathVariable Long id) {
+        log.info("Requête GET /api/annonces - liste des annonces par hospital {}", id);
+        return ResponseEntity.ok(service.getAnnonceByHospitalId(id));
+    }
+
     @PostMapping
     public ResponseEntity<AnnonceDTO> create(@Valid @RequestBody AnnonceDTO annonce) {
         log.info("Requête POST /api/annonces - création annonce");

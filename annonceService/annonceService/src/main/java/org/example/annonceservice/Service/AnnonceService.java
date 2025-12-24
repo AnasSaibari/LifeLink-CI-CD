@@ -180,6 +180,78 @@ public class AnnonceService {
         return annonceDTO;
     }
 
+    public List<AnnonceDTO> getAnnonceByHospitalId(Long hospitalId) {
+        log.info("Récupération de toutes les annonces pour l'hospital {}", hospitalId);
+        List<Annonce> annonces = repository.findByHospitalId(hospitalId);
+        log.info("Récupération réussie de {} annonces", annonces.size());
+        List<AnnonceDTO> annonceDTOS = new ArrayList<>();
+        for (Annonce annonce : annonces) {
+            AnnonceDTO annonceDTO = mapper.toDto(annonce);
+            // Récupération de l'utilisateur
+            if (annonce.getUserId() != null) {
+                try {
+                    log.debug("Récupération de l'utilisateur pour l'annonce {} (UserId: {})", annonce.getId(), annonce.getUserId());
+                    UserDTO userDTO = userClient.getUserById(annonce.getUserId());
+                    annonceDTO.setUser(new AnnonceDTO.UserInfo(
+                            userDTO.getId(),
+                            userDTO.getVilleId(),
+                            userDTO.getUsername(),
+                            userDTO.getEmail(),
+                            userDTO.getAddress(),
+                            userDTO.getRole(),
+                            userDTO.getBloodType(),
+                            userDTO.getScore(),
+                            userDTO.getPhoneNumber(),
+                            userDTO.getSex(),
+                            userDTO.getHospitalId()
+
+
+                    ));
+                    log.debug("Utilisateur récupéré: {}", userDTO.getId());
+                } catch (Exception e) {
+                    log.warn("Échec de récupération de l'utilisateur pour l'annonce {}: {}", annonce.getId(), e.getMessage());
+                }
+            }
+
+            // Récupération de la localisation
+            if (annonce.getLocationId() != null) {
+                try {
+                    log.debug("Récupération de la localisation pour l'annonce {} (LocationId: {})", annonce.getId(), annonce.getLocationId());
+                    LocationDTO locationDTO = locationClient.getLocationById(annonce.getLocationId());
+                    annonceDTO.setLocation(new AnnonceDTO.LocationInfo(
+                            locationDTO.getId(),
+                            locationDTO.getVille()
+                    ));
+                    log.debug("Localisation récupérée: {}", locationDTO.getId());
+                } catch (Exception e) {
+                    log.warn("Échec de récupération de la localisation pour l'annonce {}: {}", annonce.getId(), e.getMessage());
+                }
+            }
+            // Récupération de Hospital
+            if (annonce.getHospitalId() != null) {
+                try {
+                    HospitalDTO hospitalDTO =
+                            hospitalClient.getHospitalById(annonce.getHospitalId());
+
+                    annonceDTO.setHospital(
+                            new AnnonceDTO.HospitalInfo(
+                                    hospitalDTO.getId(),
+                                    hospitalDTO.getHospital_nom(),
+                                    hospitalDTO.getHospital_num()
+                            )
+                    );
+                } catch (Exception e) {
+                    log.warn("Impossible de récupérer l'hôpital {}", annonce.getHospitalId());
+                }
+            }
+
+
+            annonceDTOS.add(annonceDTO);
+            log.debug("Récuperation avec succès pour toutes les annonces");
+        }
+        return annonceDTOS;
+    }
+
     public AnnonceDTO create(AnnonceDTO dto) {
         log.info("Création d'une nouvelle annonce: {}", dto.getBloodType());
 
