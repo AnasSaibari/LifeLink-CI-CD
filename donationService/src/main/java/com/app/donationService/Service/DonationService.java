@@ -236,6 +236,12 @@ public class DonationService {
                 hospital.setHospital_num(
                         annonceDTO.getHospital().getHospital_num()
                 );
+                hospital.setLatitude(
+                        annonceDTO.getHospital().getLatitude()
+                );
+                hospital.setLongitude(
+                        annonceDTO.getHospital().getLongitude()
+                );
 
                 annonceInfo.setHospital(hospital);
             }

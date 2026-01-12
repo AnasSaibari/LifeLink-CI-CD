@@ -17,10 +17,12 @@ import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Slf4j   // ✅ FIX LOGGER
 @Service
@@ -89,7 +91,9 @@ public class UserService {
                         userDTO.setHospital(new UserDTO.HospitalInfo(
                                 (long) Math.toIntExact(hospital.getId()),
                                 hospital.getHospital_nom(),
-                                hospital.getHospital_num()
+                                hospital.getHospital_num(),
+                                hospital.getLongitude(),
+                                hospital.getLatitude()
                         ));
                         log.debug("Hôpital récupéré pour l'utilisateur {}: {}", user.getId(), hospital.getHospital_nom());
                     } catch (Exception e) {
@@ -104,6 +108,26 @@ public class UserService {
             return userDTOS;
         } catch (Exception e) {
             log.error("Erreur lors de la récupération de tous les utilisateurs: {}", e.getMessage(), e);
+            throw e;
+        }
+    }
+
+    public List<UserDTO> getAllUsersWithRole() {
+        log.info("Récupération de toutes les utilisateurs par Role = U ");
+        try {
+            List<User> users = repository.findAll();
+            log.debug("Nombre d'utilisateurs trouves: {}", users.size());
+            List<UserDTO> userDTOS = new ArrayList<>();
+            for (User user : users) {
+                UserDTO userDTO = mapper.toDto(user);
+                if (Objects.equals(user.getRole(), "U")) {
+                    userDTOS.add(userDTO);
+                }
+            }
+            return userDTOS;
+        }
+        catch (Exception e) {
+            log.error("Erreur lors de la récupération de tous les utilisateurs avec role = U : {}", e.getMessage(), e);
             throw e;
         }
     }
@@ -167,7 +191,9 @@ public class UserService {
                     userDTO.setHospital(new UserDTO.HospitalInfo(
                             hospital.getId(),
                             hospital.getHospital_nom(),
-                            hospital.getHospital_num()
+                            hospital.getHospital_num(),
+                            hospital.getLongitude(),
+                            hospital.getLatitude()
                     ));
                     log.debug("Hôpital récupéré: {}", hospital.getHospital_nom());
                 } catch (Exception e) {

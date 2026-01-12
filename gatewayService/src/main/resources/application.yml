@@ -46,3 +46,11 @@ spring:
           uri: http://localhost:9096
           predicates:
             - Path=/api/donations/**
+        - id: chat-service-conversations
+          uri: http://localhost:9097
+          predicates:
+            - Path=/conversations/**
+        - id: chat-service-messages
+          uri: http://localhost:9097
+          predicates:
+            - Path=/messages/**

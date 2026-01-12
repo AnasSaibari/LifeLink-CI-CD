@@ -2,7 +2,6 @@ package org.example.annonceservice.Service;
 
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.annonceservice.DTO.AnnonceDTO;
 import org.example.annonceservice.DTO.LocationDTO;
@@ -13,6 +12,7 @@ import org.example.annonceservice.FeignClient.LocationClient;
 import org.example.annonceservice.FeignClient.UserClient;
 import org.example.annonceservice.FeignClient.HospitalClient;
 import org.example.annonceservice.Mapper.AnnonceMapper;
+import org.example.annonceservice.Producer.AnnonceEventProducer;
 import org.example.annonceservice.Repository.AnnonceRepository;
 import org.springframework.stereotype.Service;
 
@@ -32,13 +32,15 @@ public class AnnonceService {
     private final UserClient userClient;
     private final LocationClient locationClient;
     private final HospitalClient hospitalClient;
+    private final AnnonceEventProducer eventProducer;
 
-    public AnnonceService(AnnonceRepository repository, AnnonceMapper mapper, UserClient userClient, LocationClient locationClient,HospitalClient hospitalClient) {
+    public AnnonceService(AnnonceRepository repository, AnnonceMapper mapper, UserClient userClient, LocationClient locationClient, HospitalClient hospitalClient, AnnonceEventProducer eventProducer) {
         this.repository = repository;
         this.userClient = userClient;
         this.locationClient = locationClient;
         this.hospitalClient = hospitalClient;
         this.mapper = mapper;
+        this.eventProducer = eventProducer;
     }
 
     public List<AnnonceDTO> getAll() {
@@ -98,7 +100,9 @@ public class AnnonceService {
                             new AnnonceDTO.HospitalInfo(
                                     hospitalDTO.getId(),
                                     hospitalDTO.getHospital_nom(),
-                                    hospitalDTO.getHospital_num()
+                                    hospitalDTO.getHospital_num(),
+                                    hospitalDTO.getLongitude(),
+                                    hospitalDTO.getLatitude()
                             )
                     );
                 } catch (Exception e) {
@@ -169,7 +173,9 @@ public class AnnonceService {
                         new AnnonceDTO.HospitalInfo(
                                 hospitalDTO.getId(),
                                 hospitalDTO.getHospital_nom(),
-                                hospitalDTO.getHospital_num()
+                                hospitalDTO.getHospital_num(),
+                                hospitalDTO.getLongitude(),
+                                hospitalDTO.getLatitude()
                         )
                 );
             } catch (Exception e) {
@@ -237,7 +243,9 @@ public class AnnonceService {
                             new AnnonceDTO.HospitalInfo(
                                     hospitalDTO.getId(),
                                     hospitalDTO.getHospital_nom(),
-                                    hospitalDTO.getHospital_num()
+                                    hospitalDTO.getHospital_num(),
+                                    hospitalDTO.getLongitude(),
+                                    hospitalDTO.getLatitude()
                             )
                     );
                 } catch (Exception e) {
@@ -267,6 +275,7 @@ public class AnnonceService {
         }
 
         Annonce saved = repository.save(annonce);
+        eventProducer.publishAnnonceCreated(dto);
         log.info("Annonce créée avec succès - ID: {}", saved.getId());
         return mapper.toDto(saved);
     }
@@ -277,7 +286,7 @@ public class AnnonceService {
         Annonce existing = repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Annonce non trouvée avec id: " + id));
 
-        validateReferences(dto);
+        validateReferences (dto);
 
         Annonce updated = mapper.updateAnnonceFromDto(dto, existing);
         updated.setId(existing.getId());
@@ -368,7 +377,9 @@ public class AnnonceService {
                         new AnnonceDTO.HospitalInfo(
                                 hospitalDTO.getId(),
                                 hospitalDTO.getHospital_nom(),
-                                hospitalDTO.getHospital_num()
+                                hospitalDTO.getHospital_num(),
+                                hospitalDTO.getLongitude(),
+                                hospitalDTO.getLatitude()
                         )
                 );
             } catch (Exception e) {

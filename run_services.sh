@@ -29,6 +29,16 @@ cd locationService
 nohup ./mvnw spring-boot:run > locationService.log 2>&1 &
 cd ..
 
+echo "Starting donationService..."
+cd donationService
+nohup ./mvnw spring-boot:run > donationService.log 2>&1 &
+cd ..
+
+echo "Starting chatService..."
+cd chatService
+nohup ./mvnw spring-boot:run > chatService.log 2>&1 &
+cd ..
+
 echo "Starting annonceService..."
 cd annonceService/annonceService
 nohup ./mvnw spring-boot:run > annonceService.log 2>&1 &
@@ -37,6 +47,11 @@ cd ../..
 echo "Starting reviewService..."
 cd reviewService
 nohup ./mvnw spring-boot:run > reviewService.log 2>&1 &
+cd ..
+
+echo "Starting notificationService..."
+cd notificationService
+nohup ./mvnw spring-boot:run > notificationService.log 2>&1 &
 cd ..
 
 echo "Waiting for services to register..."

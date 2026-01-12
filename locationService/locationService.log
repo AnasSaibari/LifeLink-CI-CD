@@ -8,22 +8,50 @@
 [INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ locationService >>>
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ locationService ---
-[INFO] Copying 1 resource from src/main/resources to target/classes
-[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] 
 [INFO] --- compiler:3.14.1:compile (default-compile) @ locationService ---
-[INFO] Nothing to compile - all classes are up to date.
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 8 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ locationService ---
-[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/locationService/src/test/resources
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\blood-donaiton-main\backend\locationService\src\test\resources
 [INFO] 
 [INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ locationService ---
-[INFO] Nothing to compile - all classes are up to date.
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
 [INFO] 
 [INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ locationService <<<
 [INFO] 
 [INFO] 
 [INFO] --- spring-boot:4.0.0:run (default-cli) @ locationService ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/4.0.0/spring-boot-buildpack-platform-4.0.0.jar
+Progress (1): 0.9/330 kBProgress (1): 2.3/330 kBProgress (1): 3.6/330 kBProgress (1): 4.0/330 kBProgress (1): 5.3/330 kBProgress (1): 6.7/330 kBProgress (1): 8.1/330 kBProgress (1): 9.4/330 kBProgress (1): 11/330 kB Progress (1): 12/330 kBProgress (1): 14/330 kBProgress (1): 15/330 kBProgress (1): 16/330 kBProgress (1): 18/330 kBProgress (1): 19/330 kBProgress (1): 20/330 kBProgress (1): 22/330 kBProgress (1): 23/330 kBProgress (1): 24/330 kBProgress (1): 26/330 kBProgress (1): 27/330 kBProgress (1): 29/330 kBProgress (1): 30/330 kBProgress (1): 31/330 kBProgress (1): 33/330 kBProgress (1): 34/330 kBProgress (1): 35/330 kBProgress (1): 37/330 kBProgress (1): 38/330 kBProgress (1): 40/330 kBProgress (1): 41/330 kBProgress (1): 42/330 kBProgress (1): 44/330 kBProgress (1): 45/330 kBProgress (1): 46/330 kBProgress (1): 48/330 kBProgress (1): 49/330 kBProgress (1): 50/330 kBProgress (1): 52/330 kBProgress (1): 53/330 kBProgress (1): 55/330 kBProgress (1): 59/330 kBProgress (1): 63/330 kBProgress (1): 67/330 kBProgress (1): 72/330 kBProgress (1): 76/330 kBProgress (1): 80/330 kBProgress (1): 84/330 kBProgress (1): 88/330 kBProgress (1): 93/330 kBProgress (1): 97/330 kBProgress (1): 101/330 kBProgress (1): 105/330 kBProgress (1): 110/330 kBProgress (1): 114/330 kBProgress (1): 118/330 kBProgress (1): 122/330 kBProgress (1): 126/330 kBProgress (1): 131/330 kBProgress (1): 135/330 kBProgress (1): 135/330 kBProgress (1): 139/330 kBProgress (1): 143/330 kBProgress (1): 148/330 kBProgress (1): 152/330 kBProgress (1): 156/330 kBProgress (1): 160/330 kBProgress (1): 165/330 kBProgress (1): 169/330 kBProgress (1): 173/330 kBProgress (1): 177/330 kBProgress (1): 182/330 kBProgress (1): 186/330 kBProgress (1): 190/330 kBProgress (1): 192/330 kBProgress (1): 196/330 kBProgress (1): 200/330 kBProgress (1): 204/330 kBProgress (1): 209/330 kBProgress (1): 213/330 kBProgress (1): 217/330 kBProgress (1): 233/330 kBProgress (1): 250/330 kBProgress (1): 266/330 kBProgress (1): 283/330 kBProgress (1): 299/330 kBProgress (1): 315/330 kBProgress (1): 323/330 kBProgress (1): 330 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/4.0.0/spring-boot-buildpack-platform-4.0.0.jar (330 kB at 95 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/4.0.0/spring-boot-loader-tools-4.0.0.jar
+Progress (1): 0/1.1 MBProgress (1): 0/1.1 MBProgress (1): 0/1.1 MBProgress (1): 0/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.1/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.2/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.3/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.4/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (2): 0.7/1.1 MB | 0.9/373 kBProgress (2): 0.7/1.1 MB | 0.9/373 kBProgress (2): 0.7/1.1 MB | 2.3/373 kBProgress (2): 0.7/1.1 MB | 3.6/373 kBProgress (2): 0.7/1.1 MB | 5.0/373 kBProgress (2): 0.7/1.1 MB | 6.4/373 kBProgress (2): 0.7/1.1 MB | 7.7/373 kBProgress (2): 0.7/1.1 MB | 7.7/373 kBProgress (2): 0.7/1.1 MB | 9.1/373 kBProgress (2): 0.7/1.1 MB | 10/373 kB Progress (2): 0.7/1.1 MB | 12/373 kBProgress (2): 0.7/1.1 MB | 13/373 kBProgress (2): 0.7/1.1 MB | 15/373 kBProgress (2): 0.7/1.1 MB | 16/373 kBProgress (2): 0.7/1.1 MB | 16/373 kBProgress (2): 0.7/1.1 MB | 16/373 kBProgress (2): 0.7/1.1 MB | 17/373 kBProgress (2): 0.7/1.1 MB | 17/373 kBProgress (2): 0.7/1.1 MB | 19/373 kBProgress (2): 0.7/1.1 MB | 20/373 kBProgress (2): 0.7/1.1 MB | 20/373 kBProgress (2): 0.7/1.1 MB | 22/373 kBProgress (2): 0.7/1.1 MB | 23/373 kBProgress (2): 0.7/1.1 MB | 24/373 kBProgress (2): 0.7/1.1 MB | 26/373 kBProgress (2): 0.7/1.1 MB | 27/373 kBProgress (2): 0.7/1.1 MB | 29/373 kBProgress (2): 0.8/1.1 MB | 29/373 kBProgress (2): 0.8/1.1 MB | 30/373 kBProgress (2): 0.8/1.1 MB | 31/373 kBProgress (2): 0.8/1.1 MB | 33/373 kBProgress (2): 0.8/1.1 MB | 34/373 kBProgress (2): 0.8/1.1 MB | 35/373 kBProgress (2): 0.8/1.1 MB | 37/373 kBProgress (2): 0.8/1.1 MB | 38/373 kBProgress (2): 0.8/1.1 MB | 40/373 kBProgress (2): 0.8/1.1 MB | 41/373 kBProgress (2): 0.8/1.1 MB | 42/373 kBProgress (2): 0.8/1.1 MB | 42/373 kBProgress (2): 0.8/1.1 MB | 44/373 kBProgress (2): 0.8/1.1 MB | 45/373 kBProgress (2): 0.8/1.1 MB | 46/373 kBProgress (2): 0.8/1.1 MB | 48/373 kBProgress (2): 0.8/1.1 MB | 48/373 kBProgress (2): 0.8/1.1 MB | 49/373 kBProgress (2): 0.8/1.1 MB | 50/373 kBProgress (2): 0.8/1.1 MB | 52/373 kBProgress (2): 0.8/1.1 MB | 53/373 kBProgress (2): 0.8/1.1 MB | 55/373 kBProgress (2): 0.8/1.1 MB | 59/373 kBProgress (2): 0.8/1.1 MB | 63/373 kBProgress (2): 0.8/1.1 MB | 67/373 kBProgress (2): 0.8/1.1 MB | 72/373 kBProgress (2): 0.8/1.1 MB | 76/373 kBProgress (2): 0.8/1.1 MB | 80/373 kBProgress (2): 0.8/1.1 MB | 84/373 kBProgress (2): 0.8/1.1 MB | 88/373 kBProgress (2): 0.8/1.1 MB | 93/373 kBProgress (2): 0.8/1.1 MB | 97/373 kBProgress (2): 0.8/1.1 MB | 101/373 kBProgress (2): 0.8/1.1 MB | 105/373 kBProgress (2): 0.8/1.1 MB | 110/373 kBProgress (2): 0.8/1.1 MB | 114/373 kBProgress (2): 0.8/1.1 MB | 118/373 kBProgress (2): 0.8/1.1 MB | 122/373 kBProgress (2): 0.8/1.1 MB | 126/373 kBProgress (2): 0.8/1.1 MB | 129/373 kBProgress (2): 0.8/1.1 MB | 133/373 kBProgress (2): 0.8/1.1 MB | 138/373 kBProgress (2): 0.8/1.1 MB | 142/373 kBProgress (2): 0.8/1.1 MB | 146/373 kBProgress (2): 0.8/1.1 MB | 150/373 kBProgress (2): 0.8/1.1 MB | 154/373 kBProgress (2): 0.8/1.1 MB | 159/373 kBProgress (2): 0.8/1.1 MB | 163/373 kBProgress (2): 0.8/1.1 MB | 167/373 kBProgress (2): 0.8/1.1 MB | 171/373 kBProgress (2): 0.8/1.1 MB | 176/373 kBProgress (2): 0.8/1.1 MB | 180/373 kBProgress (2): 0.8/1.1 MB | 184/373 kBProgress (2): 0.8/1.1 MB | 188/373 kBProgress (2): 0.8/1.1 MB | 192/373 kBProgress (2): 0.8/1.1 MB | 197/373 kBProgress (2): 0.8/1.1 MB | 201/373 kBProgress (2): 0.8/1.1 MB | 202/373 kBProgress (2): 0.8/1.1 MB | 206/373 kBProgress (2): 0.8/1.1 MB | 211/373 kBProgress (2): 0.8/1.1 MB | 215/373 kBProgress (2): 0.8/1.1 MB | 219/373 kBProgress (2): 0.8/1.1 MB | 235/373 kBProgress (2): 0.8/1.1 MB | 252/373 kBProgress (2): 0.8/1.1 MB | 268/373 kBProgress (2): 0.8/1.1 MB | 285/373 kBProgress (2): 0.8/1.1 MB | 301/373 kBProgress (2): 0.8/1.1 MB | 317/373 kBProgress (2): 0.8/1.1 MB | 333/373 kBProgress (2): 0.8/1.1 MB | 334/373 kBProgress (2): 0.8/1.1 MB | 350/373 kBProgress (2): 0.8/1.1 MB | 367/373 kBProgress (2): 0.8/1.1 MB | 373 kB    Progress (2): 0.8/1.1 MB | 373 kBProgress (2): 0.8/1.1 MB | 373 kBProgress (2): 0.8/1.1 MB | 373 kBProgress (2): 0.9/1.1 MB | 373 kBProgress (2): 0.9/1.1 MB | 373 kBProgress (2): 0.9/1.1 MB | 373 kBProgress (2): 0.9/1.1 MB | 373 kBProgress (2): 0.9/1.1 MB | 373 kBProgress (2): 0.9/1.1 MB | 373 kBProgress (2): 0.9/1.1 MB | 373 kBProgress (2): 1.0/1.1 MB | 373 kBProgress (2): 1.0/1.1 MB | 373 kBProgress (2): 1.0/1.1 MB | 373 kBProgress (2): 1.0/1.1 MB | 373 kBProgress (2): 1.0/1.1 MB | 373 kBProgress (2): 1.0/1.1 MB | 373 kBProgress (2): 1.0/1.1 MB | 373 kBProgress (2): 1.1/1.1 MB | 373 kBProgress (2): 1.1/1.1 MB | 373 kBProgress (2): 1.1/1.1 MB | 373 kBProgress (2): 1.1 MB | 373 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar (373 kB at 435 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar (1.1 MB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar
+Progress (1): 0.9/339 kBProgress (2): 0.9/339 kB | 0/1.4 MBProgress (2): 0.9/339 kB | 0/1.4 MBProgress (2): 2.3/339 kB | 0/1.4 MBProgress (2): 2.3/339 kB | 0/1.4 MBProgress (2): 3.6/339 kB | 0/1.4 MBProgress (2): 5.0/339 kB | 0/1.4 MBProgress (2): 5.0/339 kB | 0/1.4 MBProgress (2): 6.4/339 kB | 0/1.4 MBProgress (2): 6.4/339 kB | 0/1.4 MBProgress (2): 6.4/339 kB | 0/1.4 MBProgress (2): 7.7/339 kB | 0/1.4 MBProgress (2): 7.7/339 kB | 0/1.4 MBProgress (2): 9.1/339 kB | 0/1.4 MBProgress (2): 9.1/339 kB | 0/1.4 MBProgress (2): 10/339 kB | 0/1.4 MB Progress (2): 10/339 kB | 0/1.4 MBProgress (2): 10/339 kB | 0/1.4 MBProgress (2): 12/339 kB | 0/1.4 MBProgress (2): 12/339 kB | 0/1.4 MBProgress (2): 13/339 kB | 0/1.4 MBProgress (2): 13/339 kB | 0/1.4 MBProgress (2): 15/339 kB | 0/1.4 MBProgress (2): 16/339 kB | 0/1.4 MBProgress (2): 17/339 kB | 0/1.4 MBProgress (2): 19/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 20/339 kB | 0/1.4 MBProgress (2): 22/339 kB | 0/1.4 MBProgress (2): 23/339 kB | 0/1.4 MBProgress (2): 23/339 kB | 0/1.4 MBProgress (2): 23/339 kB | 0/1.4 MBProgress (2): 23/339 kB | 0/1.4 MBProgress (2): 24/339 kB | 0/1.4 MBProgress (2): 24/339 kB | 0/1.4 MBProgress (2): 26/339 kB | 0/1.4 MBProgress (2): 26/339 kB | 0/1.4 MBProgress (2): 27/339 kB | 0/1.4 MBProgress (2): 27/339 kB | 0/1.4 MBProgress (2): 29/339 kB | 0/1.4 MBProgress (2): 30/339 kB | 0/1.4 MBProgress (2): 30/339 kB | 0/1.4 MBProgress (2): 31/339 kB | 0/1.4 MBProgress (2): 31/339 kB | 0/1.4 MBProgress (2): 33/339 kB | 0/1.4 MBProgress (2): 33/339 kB | 0/1.4 MBProgress (2): 34/339 kB | 0/1.4 MBProgress (2): 34/339 kB | 0/1.4 MBProgress (2): 34/339 kB | 0/1.4 MBProgress (2): 35/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (2): 37/339 kB | 0.1/1.4 MBProgress (3): 37/339 kB | 0.1/1.4 MB | 4.0/168 kBProgress (3): 37/339 kB | 0.1/1.4 MB | 20/168 kB Progress (4): 37/339 kB | 0.1/1.4 MB | 20/168 kB | 0/2.0 MBProgress (4): 37/339 kB | 0.1/1.4 MB | 20/168 kB | 0/2.0 MBProgress (4): 37/339 kB | 0.1/1.4 MB | 20/168 kB | 0/2.0 MBProgress (4): 37/339 kB | 0.1/1.4 MB | 20/168 kB | 0/2.0 MBProgress (4): 37/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 38/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 40/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 41/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 42/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 44/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 44/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 44/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 44/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 44/339 kB | 0.1/1.4 MB | 37/168 kB | 0/2.0 MBProgress (4): 44/339 kB | 0.1/1.4 MB | 53/168 kB | 0/2.0 MBProgress (4): 45/339 kB | 0.1/1.4 MB | 53/168 kB | 0/2.0 MBProgress (4): 46/339 kB | 0.1/1.4 MB | 53/168 kB | 0/2.0 MBProgress (4): 46/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 48/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 49/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 50/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 52/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 53/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 55/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 59/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 59/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 63/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 63/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 63/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 67/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 67/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 71/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 71/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 71/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 71/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 71/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 71/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 71/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 76/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 78/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 82/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 69/168 kB | 0/2.0 MBProgress (4): 86/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 91/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 95/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 98/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 103/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 107/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 111/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 115/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 119/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 124/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 128/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 132/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 136/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 141/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 143/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 148/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 152/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 156/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 160/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 164/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 168/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 173/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 177/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 180/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 184/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 189/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 193/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 197/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 201/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 201/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 206/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 210/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 214/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 218/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 235/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 251/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 267/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 284/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 284/339 kB | 0.1/1.4 MB | 86/168 kB | 0/2.0 MBProgress (4): 284/339 kB | 0.1/1.4 MB | 86/168 kB | 0.1/2.0 MBProgress (4): 284/339 kB | 0.1/1.4 MB | 102/168 kB | 0.1/2.0 MBProgress (4): 284/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (4): 300/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (4): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (4): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 7.7/58 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 16/58 kB Progress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 20/58 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 37/58 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 53/58 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 58 kB                                                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar (58 kB at 27 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.0/maven-shade-plugin-3.6.0.jar
+Progress (4): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (4): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (4): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (4): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 7.7/150 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 16/150 kB Progress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 28/150 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 44/150 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 61/150 kBProgress (5): 311/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 77/150 kBProgress (5): 328/339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 77/150 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 77/150 kB    Progress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 93/150 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 110/150 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 126/150 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 142/150 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 150 kB                                                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.0/maven-shade-plugin-3.6.0.jar (150 kB at 53 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.jar
+Progress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 7.7/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 8.2/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 25/125 kB Progress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 41/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 41/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.1/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/125 kBProgress (5): 339 kB | 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 74/125 kBProgress (5): 339 kB | 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 74/125 kBProgress (5): 339 kB | 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 74/125 kBProgress (5): 339 kB | 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 74/125 kBProgress (5): 339 kB | 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 74/125 kBProgress (5): 339 kB | 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 74/125 kB                                                                       Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/4.0.0/spring-boot-loader-tools-4.0.0.jar (339 kB at 110 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar
+Progress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 90/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 90/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 90/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 90/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 90/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 90/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 90/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 106/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 123/125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kB    Progress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kBProgress (5): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kB | 7.7/73 kBProgress (5): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kB | 7.7/73 kBProgress (5): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kB | 16/73 kB Progress (5): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 125 kB | 25/73 kB                                                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.jar (125 kB at 39 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar
+Progress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 41/73 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 41/73 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 41/73 kBProgress (4): 0.2/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/73 kBProgress (4): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/73 kBProgress (4): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/73 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/73 kB | 7.7/52 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/73 kB | 16/52 kB Progress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 57/73 kB | 16/52 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 16/52 kB   Progress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 20/52 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 20/52 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 37/52 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 52 kB   Progress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 52 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 52 kBProgress (5): 0.3/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 52 kBProgress (5): 0.4/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 52 kBProgress (5): 0.4/1.4 MB | 119/168 kB | 0.1/2.0 MB | 73 kB | 52 kBProgress (5): 0.4/1.4 MB | 135/168 kB | 0.1/2.0 MB | 73 kB | 52 kBProgress (5): 0.4/1.4 MB | 151/168 kB | 0.1/2.0 MB | 73 kB | 52 kBProgress (5): 0.4/1.4 MB | 151/168 kB | 0.1/2.0 MB | 73 kB | 52 kB                                                                  Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar (52 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.10/jdependency-2.10.jar
+Progress (4): 0.4/1.4 MB | 151/168 kB | 0.1/2.0 MB | 73 kBProgress (4): 0.4/1.4 MB | 168 kB | 0.1/2.0 MB | 73 kB    Progress (4): 0.4/1.4 MB | 168 kB | 0.1/2.0 MB | 73 kBProgress (5): 0.4/1.4 MB | 168 kB | 0.1/2.0 MB | 73 kB | 7.7/416 kBProgress (5): 0.4/1.4 MB | 168 kB | 0.1/2.0 MB | 73 kB | 7.7/416 kBProgress (5): 0.4/1.4 MB | 168 kB | 0.1/2.0 MB | 73 kB | 7.7/416 kBProgress (5): 0.4/1.4 MB | 168 kB | 0.1/2.0 MB | 73 kB | 7.7/416 kBProgress (5): 0.4/1.4 MB | 168 kB | 0.1/2.0 MB | 73 kB | 16/416 kB                                                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar (168 kB at 48 kB/s)
+Progress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 25/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 41/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 41/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 41/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 41/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 41/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 41/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 57/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 57/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 57/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.1/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.2/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.2/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.2/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.2/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.4/1.4 MB | 0.2/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.5/1.4 MB | 0.2/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.5/1.4 MB | 0.2/2.0 MB | 73 kB | 74/416 kBProgress (4): 0.5/1.4 MB | 0.2/2.0 MB | 73 kB | 90/416 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar (73 kB at 20 kB/s)
+Progress (3): 0.5/1.4 MB | 0.2/2.0 MB | 90/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 90/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 90/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 90/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 90/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 90/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.5/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 106/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 123/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 123/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 123/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 123/416 kBProgress (3): 0.6/1.4 MB | 0.2/2.0 MB | 123/416 kBProgress (3): 0.6/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.6/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 123/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 139/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 139/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 139/416 kBProgress (3): 0.7/1.4 MB | 0.3/2.0 MB | 139/416 kBProgress (3): 0.8/1.4 MB | 0.3/2.0 MB | 139/416 kBProgress (3): 0.8/1.4 MB | 0.3/2.0 MB | 139/416 kBProgress (3): 0.8/1.4 MB | 0.3/2.0 MB | 139/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 139/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.8/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.9/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.9/1.4 MB | 0.4/2.0 MB | 156/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 156/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 156/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 156/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 156/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 0.9/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 1.0/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 1.0/1.4 MB | 0.5/2.0 MB | 172/416 kBProgress (3): 1.0/1.4 MB | 0.5/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 188/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 205/416 kBProgress (3): 1.0/1.4 MB | 0.6/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.6/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.6/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.7/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.8/2.0 MB | 205/416 kBProgress (3): 1.1/1.4 MB | 0.8/2.0 MB | 221/416 kBProgress (3): 1.1/1.4 MB | 0.8/2.0 MB | 221/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 221/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 221/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 238/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 238/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 238/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 238/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 238/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 238/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 254/416 kBProgress (3): 1.2/1.4 MB | 0.8/2.0 MB | 254/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 254/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 254/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 270/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 270/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 270/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 270/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 270/416 kBProgress (3): 1.3/1.4 MB | 0.8/2.0 MB | 287/416 kBProgress (3): 1.4/1.4 MB | 0.8/2.0 MB | 287/416 kBProgress (3): 1.4/1.4 MB | 0.8/2.0 MB | 287/416 kBProgress (3): 1.4/1.4 MB | 0.8/2.0 MB | 287/416 kBProgress (3): 1.4/1.4 MB | 0.8/2.0 MB | 287/416 kBProgress (3): 1.4 MB | 0.8/2.0 MB | 287/416 kB    Progress (3): 1.4 MB | 0.8/2.0 MB | 303/416 kBProgress (3): 1.4 MB | 0.8/2.0 MB | 303/416 kBProgress (3): 1.4 MB | 0.8/2.0 MB | 319/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 319/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 336/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 336/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 336/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 336/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 336/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 0.9/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 1.0/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 1.0/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 1.0/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 1.0/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 1.0/2.0 MB | 352/416 kBProgress (3): 1.4 MB | 1.0/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.0/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.1/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.1/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.1/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.1/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.1/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.1/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 369/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 385/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 385/416 kBProgress (3): 1.4 MB | 1.2/2.0 MB | 385/416 kBProgress (3): 1.4 MB | 1.3/2.0 MB | 385/416 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar (1.4 MB at 348 kB/s)
+Progress (2): 1.3/2.0 MB | 385/416 kBProgress (2): 1.3/2.0 MB | 385/416 kBProgress (2): 1.3/2.0 MB | 401/416 kBProgress (2): 1.3/2.0 MB | 401/416 kBProgress (2): 1.3/2.0 MB | 401/416 kBProgress (2): 1.3/2.0 MB | 401/416 kBProgress (2): 1.4/2.0 MB | 401/416 kBProgress (2): 1.4/2.0 MB | 401/416 kBProgress (2): 1.4/2.0 MB | 416 kB    Progress (2): 1.4/2.0 MB | 416 kBProgress (2): 1.4/2.0 MB | 416 kBProgress (2): 1.4/2.0 MB | 416 kBProgress (2): 1.4/2.0 MB | 416 kBProgress (2): 1.5/2.0 MB | 416 kBProgress (2): 1.5/2.0 MB | 416 kBProgress (2): 1.5/2.0 MB | 416 kBProgress (2): 1.5/2.0 MB | 416 kBProgress (2): 1.5/2.0 MB | 416 kBProgress (2): 1.5/2.0 MB | 416 kBProgress (2): 1.6/2.0 MB | 416 kBProgress (2): 1.6/2.0 MB | 416 kBProgress (2): 1.6/2.0 MB | 416 kBProgress (2): 1.6/2.0 MB | 416 kBProgress (2): 1.6/2.0 MB | 416 kBProgress (2): 1.6/2.0 MB | 416 kBProgress (2): 1.7/2.0 MB | 416 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.10/jdependency-2.10.jar (416 kB at 105 kB/s)
+Progress (1): 1.7/2.0 MBProgress (1): 1.7/2.0 MBProgress (1): 1.7/2.0 MBProgress (1): 1.7/2.0 MBProgress (1): 1.7/2.0 MBProgress (1): 1.8/2.0 MBProgress (1): 1.8/2.0 MBProgress (1): 1.8/2.0 MBProgress (1): 1.8/2.0 MBProgress (1): 1.8/2.0 MBProgress (1): 1.8/2.0 MBProgress (1): 1.9/2.0 MBProgress (1): 1.9/2.0 MBProgress (1): 1.9/2.0 MBProgress (1): 1.9/2.0 MBProgress (1): 1.9/2.0 MBProgress (1): 1.9/2.0 MBProgress (1): 2.0/2.0 MBProgress (1): 2.0/2.0 MBProgress (1): 2.0/2.0 MBProgress (1): 2.0 MB                        Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar (2.0 MB at 490 kB/s)
 [INFO] Attaching agents: []
 
   .   ____          _            __ _ _
@@ -35,29 +63,29 @@
 
  :: Spring Boot ::                (v4.0.0)
 
-2025-12-19T23:24:56.462+01:00  INFO 38493 --- [locationService] [  restartedMain] c.a.l.LocationServiceApplication         : Starting LocationServiceApplication using Java 17.0.17 with PID 38493 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/locationService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/locationService)
-2025-12-19T23:24:56.464+01:00  INFO 38493 --- [locationService] [  restartedMain] c.a.l.LocationServiceApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-12-19T23:24:56.506+01:00  INFO 38493 --- [locationService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-12-19T23:24:56.507+01:00  INFO 38493 --- [locationService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-12-19T23:24:57.061+01:00  INFO 38493 --- [locationService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-19T23:24:57.189+01:00  INFO 38493 --- [locationService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
-2025-12-19T23:24:57.392+01:00  INFO 38493 --- [locationService] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd504d08-3ad0-35d2-bba6-70088743ad4b
-2025-12-19T23:24:57.684+01:00  INFO 38493 --- [locationService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
-2025-12-19T23:24:57.691+01:00  INFO 38493 --- [locationService] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-19T23:24:57.692+01:00  INFO 38493 --- [locationService] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-19T23:24:57.721+01:00  INFO 38493 --- [locationService] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1213 ms
-2025-12-19T23:24:57.826+01:00  INFO 38493 --- [locationService] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-19T23:24:57.863+01:00  INFO 38493 --- [locationService] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-19T23:24:58.123+01:00  INFO 38493 --- [locationService] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-19T23:24:58.143+01:00  INFO 38493 --- [locationService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-19T23:24:58.358+01:00  INFO 38493 --- [locationService] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ad0b1db
-2025-12-19T23:24:58.359+01:00  INFO 38493 --- [locationService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-19T23:24:58.401+01:00  WARN 38493 --- [locationService] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-19T23:24:58.410+01:00  INFO 38493 --- [locationService] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-25T21:49:02.014+01:00  INFO 15952 --- [locationService] [  restartedMain] c.a.l.LocationServiceApplication         : Starting LocationServiceApplication using Java 17.0.17 with PID 15952 (C:\Users\HP\Desktop\blood-donaiton-main\backend\locationService\target\classes started by Anas Saibari in C:\Users\HP\Desktop\blood-donaiton-main\backend\locationService)
+2025-12-25T21:49:02.035+01:00  INFO 15952 --- [locationService] [  restartedMain] c.a.l.LocationServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-25T21:49:02.460+01:00  INFO 15952 --- [locationService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-25T21:49:02.462+01:00  INFO 15952 --- [locationService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-25T21:49:12.382+01:00  INFO 15952 --- [locationService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25T21:49:13.782+01:00  INFO 15952 --- [locationService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1319 ms. Found 1 JPA repository interface.
+2025-12-25T21:49:15.047+01:00  INFO 15952 --- [locationService] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dd504d08-3ad0-35d2-bba6-70088743ad4b
+2025-12-25T21:49:19.145+01:00  INFO 15952 --- [locationService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
+2025-12-25T21:49:19.230+01:00  INFO 15952 --- [locationService] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-25T21:49:19.230+01:00  INFO 15952 --- [locationService] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-25T21:49:19.591+01:00  INFO 15952 --- [locationService] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 17124 ms
+2025-12-25T21:49:20.703+01:00  INFO 15952 --- [locationService] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-25T21:49:20.982+01:00  INFO 15952 --- [locationService] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-25T21:49:37.643+01:00  INFO 15952 --- [locationService] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25T21:49:38.201+01:00  INFO 15952 --- [locationService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-25T21:49:45.441+01:00  INFO 15952 --- [locationService] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f9f69c3
+2025-12-25T21:49:45.449+01:00  INFO 15952 --- [locationService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-25T21:49:47.364+01:00  WARN 15952 --- [locationService] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-25T21:49:47.474+01:00  INFO 15952 --- [locationService] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/location_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
-	Database version: 8.0.44
+	Database version: 9.1
 	Default catalog/schema: location_db/undefined
 	Autocommit mode: undefined/unknown
 	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
@@ -65,19 +93,740 @@
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-19T23:24:58.996+01:00  INFO 38493 --- [locationService] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-19T23:24:59.038+01:00  INFO 38493 --- [locationService] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-19T23:24:59.084+01:00  INFO 38493 --- [locationService] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-12-19T23:24:59.148+01:00  WARN 38493 --- [locationService] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-19T23:24:59.454+01:00  INFO 38493 --- [locationService] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
-2025-12-19T23:24:59.540+01:00  WARN 38493 --- [locationService] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-19T23:24:59.568+01:00  INFO 38493 --- [locationService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
-2025-12-19T23:24:59.581+01:00  INFO 38493 --- [locationService] [  restartedMain] c.a.l.LocationServiceApplication         : Started LocationServiceApplication in 3.538 seconds (process running for 4.008)
-2025-12-19T23:27:53.288+01:00  WARN 38493 --- [locationService] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s802ms).
-2025-12-19T23:28:04.071+01:00  INFO 38493 --- [locationService] [nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-19T23:28:04.071+01:00  INFO 38493 --- [locationService] [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-19T23:28:04.075+01:00  INFO 38493 --- [locationService] [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-12-19T23:28:04.128+01:00  INFO 38493 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : RequÃªte GET /location - RÃ©cupÃ©ration de toutes les locations
-2025-12-19T23:28:04.128+01:00  INFO 38493 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : RÃ©cupÃ©ration de toutes les locations
+2025-12-25T21:49:59.074+01:00  INFO 15952 --- [locationService] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table location modify column ville varchar(255)
+2025-12-25T21:50:00.246+01:00  WARN 15952 --- [locationService] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table location modify column ville varchar(255)" via JDBC [Specified key was too long; max key length is 1000 bytes]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table location modify column ville varchar(255)" via JDBC [Specified key was too long; max key length is 1000 bytes]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:93) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:573) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:513) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:331) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:82) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:230) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:109) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:267) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:139) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:350) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:436) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1459) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:433) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:416) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:409) ~[spring-orm-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:966) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at com.app.locationService.LocationServiceApplication.main(LocationServiceApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.0.jar:4.0.0]
+Caused by: java.sql.SQLSyntaxErrorException: Specified key was too long; max key length is 1000 bytes
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:837) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:685) ~[mysql-connector-j-9.5.0.jar:9.5.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:79) ~[hibernate-core-7.1.8.Final.jar:7.1.8.Final]
+	... 42 common frames omitted
+
+2025-12-25T21:50:01.534+01:00  INFO 15952 --- [locationService] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25T21:50:01.719+01:00  INFO 15952 --- [locationService] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-25T21:50:02.745+01:00  WARN 15952 --- [locationService] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-25T21:50:08.754+01:00  INFO 15952 --- [locationService] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2025-12-25T21:50:09.740+01:00  WARN 15952 --- [locationService] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-25T21:50:09.886+01:00  INFO 15952 --- [locationService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
+2025-12-25T21:50:10.165+01:00  INFO 15952 --- [locationService] [  restartedMain] c.a.l.LocationServiceApplication         : Started LocationServiceApplication in 71.139 seconds (process running for 75.865)
+2025-12-25T21:51:32.637+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-25T21:51:32.666+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-25T21:51:32.940+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 271 ms
+2025-12-25T21:51:40.231+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:51:40.238+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:51:40.972+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:51:43.063+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:51:43.064+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:51:43.071+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:51:43.123+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:51:43.123+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:51:43.130+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:51:43.149+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:51:43.150+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:51:43.155+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:52:05.773+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:52:05.774+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:52:05.786+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:52:05.838+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:52:05.839+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:52:05.871+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:52:05.906+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:52:05.906+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:52:05.916+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:52:05.954+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:52:05.958+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:52:05.972+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:52:40.863+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:52:40.879+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:52:40.913+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:53:46.714+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:53:46.757+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:47.007+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:53:48.130+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:53:48.130+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:48.137+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:53:48.187+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:53:48.187+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:48.192+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:53:48.217+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:53:48.217+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:48.227+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:53:54.598+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:53:54.598+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:54.617+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:53:54.657+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:53:54.660+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:54.685+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:53:54.787+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:53:54.787+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:54.837+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:53:55.047+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:53:55.047+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:53:55.070+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:54:38.313+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:38.314+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:38.319+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:38.371+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:38.371+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:38.377+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:38.407+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:38.407+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:38.407+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:38.433+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:54:38.433+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:38.444+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:54:39.100+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:39.100+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:39.107+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:39.127+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:39.130+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:39.132+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:39.180+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:39.180+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:39.187+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:39.207+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:54:39.207+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:39.216+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:54:41.310+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:41.310+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:41.326+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:41.340+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:41.340+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:41.353+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:41.393+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:41.397+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:41.407+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:41.427+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:54:41.427+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:41.437+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:54:44.947+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:44.947+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:44.960+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:45.367+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:54:45.369+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:54:45.378+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:54:56.950+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location - Récupération de toutes les locations
+2025-12-25T21:54:56.951+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de toutes les locations
 Hibernate: select l1_0.id,l1_0.ville from location l1_0
-2025-12-19T23:28:04.263+01:00  INFO 38493 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : RÃ©cupÃ©ration rÃ©ussie de 5 locations
+2025-12-25T21:54:57.887+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération réussie de 2 locations
+2025-12-25T21:55:40.483+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:55:40.485+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:55:40.499+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:11.917+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:11.917+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:11.917+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:13.820+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:13.820+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:13.827+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:15.180+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:15.181+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:15.187+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:16.120+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:16.120+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:16.127+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:16.182+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:16.182+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:16.187+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:16.353+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:16.357+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:16.367+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:16.382+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:56:16.387+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:16.387+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:56:20.087+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:20.087+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:20.090+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:20.112+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:56:20.112+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:20.122+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:56:23.934+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:23.934+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:23.937+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:24.160+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:24.160+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:24.161+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:24.180+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:56:24.180+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:24.180+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:56:33.077+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:33.077+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:33.087+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:40.066+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:40.066+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:40.073+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:40.090+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:40.090+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:40.094+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:40.124+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:40.124+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:40.129+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:40.150+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:56:40.152+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:40.153+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:56:43.331+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:43.331+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:43.337+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:43.352+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:43.353+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:43.356+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:44.790+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:44.790+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:44.796+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:44.832+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:44.832+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:44.837+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:44.852+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:44.852+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:44.857+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:45.420+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:45.420+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:45.428+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:45.467+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:45.467+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:45.475+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:45.495+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:45.495+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:45.500+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:54.297+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:54.297+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:54.300+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:54.320+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:54.320+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:54.327+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:54.352+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:54.352+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:54.361+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:54.381+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:56:54.381+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:54.387+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:56:55.697+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:55.697+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:55.709+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:55.738+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:55.738+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:55.749+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:55.795+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:56:55.795+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:55.804+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:56:55.830+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:56:55.830+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:56:55.837+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:57:01.637+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location - Récupération de toutes les locations
+2025-12-25T21:57:01.637+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de toutes les locations
+Hibernate: select l1_0.id,l1_0.ville from location l1_0
+2025-12-25T21:57:01.637+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération réussie de 2 locations
+2025-12-25T21:57:43.339+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:57:43.340+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:57:43.350+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:57:43.392+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:57:43.392+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:57:43.403+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:57:43.467+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:57:43.467+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:57:43.474+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:57:43.497+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:57:43.497+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:57:43.506+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:58:03.492+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:03.492+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:03.498+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:03.519+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:03.520+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:03.526+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:03.556+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:03.556+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:03.561+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:03.585+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:58:03.585+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:03.591+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:58:04.837+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:04.837+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:04.844+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:04.867+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:04.867+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:04.872+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:04.900+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:04.900+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:04.905+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:04.926+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:58:04.927+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:04.938+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:58:06.800+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:06.800+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:06.807+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:06.837+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:06.837+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:06.844+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:06.877+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:06.879+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:06.889+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:58:06.933+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:58:06.933+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:06.963+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:58:09.282+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location - Récupération de toutes les locations
+2025-12-25T21:58:09.283+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de toutes les locations
+Hibernate: select l1_0.id,l1_0.ville from location l1_0
+2025-12-25T21:58:09.302+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération réussie de 2 locations
+2025-12-25T21:58:57.347+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:58:57.348+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:58:57.360+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:00.103+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:00.103+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:00.127+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:00.772+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:00.773+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:00.790+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:00.832+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:59:00.832+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:00.842+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:59:00.939+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:00.940+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:00.967+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:01.107+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:01.107+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:01.123+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:01.214+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:59:01.214+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:01.235+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:59:01.357+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:01.364+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:01.376+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:01.810+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:01.810+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:01.833+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:01.995+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:01.995+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:02.025+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:14.286+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:14.290+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:14.330+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:14.417+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:14.419+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:14.432+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:40.756+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:40.756+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:40.773+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:41.746+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:41.746+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:41.760+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:41.847+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:41.847+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:41.860+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:43.760+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:43.762+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:43.783+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:44.668+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:44.671+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:44.680+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:44.785+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:44.786+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:44.802+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:44.842+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:59:44.847+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:44.861+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:59:44.976+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:44.978+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:44.999+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:45.134+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:45.134+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:45.144+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:45.184+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T21:59:45.184+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:45.193+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T21:59:45.252+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:45.254+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:45.259+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:45.340+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:45.342+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:45.354+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:45.384+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:45.385+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:45.392+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:45.621+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:45.621+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:45.640+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T21:59:45.693+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T21:59:45.693+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T21:59:45.707+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:17.276+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:17.281+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:17.292+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:46.660+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:46.660+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:46.666+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:46.710+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:46.715+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:46.719+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:47.607+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:47.607+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:47.609+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:47.637+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:47.637+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:47.641+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:47.720+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:47.720+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:47.729+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:47.750+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T22:00:47.750+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:47.750+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T22:00:47.777+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:47.777+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:47.786+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:47.797+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:47.797+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:47.809+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:51.897+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:51.898+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:51.904+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:00:51.937+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:00:51.937+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:00:51.951+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:00.116+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:00.116+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:00.122+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:00.136+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:00.136+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:00.147+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:00.167+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:00.167+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:00.172+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:00.280+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T22:01:00.280+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:00.286+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T22:01:00.319+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:00.319+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:00.319+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:00.387+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:00.387+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:00.399+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:02.572+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:02.573+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:02.579+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:03.976+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:03.976+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:03.979+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.159+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.159+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.159+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.182+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T22:01:04.182+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.192+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T22:01:04.271+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.272+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.279+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.359+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.360+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.363+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.390+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T22:01:04.390+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.396+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T22:01:04.432+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.432+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.438+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.490+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.491+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.498+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.519+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.520+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.527+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.689+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.689+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.694+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.716+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.716+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.723+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.752+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.752+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.760+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:04.782+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:04.782+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:04.796+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:20.079+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:20.081+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:20.093+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:20.206+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:20.206+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:20.214+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:20.311+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:20.311+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:20.322+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:20.340+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:20.340+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:20.346+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:29.134+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:29.134+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:29.136+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:29.156+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:29.156+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:29.161+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:29.186+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:29.186+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:29.192+01:00  INFO 15952 --- [locationService] [nio-9092-exec-8] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:29.216+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T22:01:29.217+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:29.223+01:00  INFO 15952 --- [locationService] [nio-9092-exec-7] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T22:01:29.245+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:29.246+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:29.253+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:29.274+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:29.274+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:29.279+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:36.818+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:36.818+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:36.823+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:36.836+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:36.839+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:36.843+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:36.856+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:36.856+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:36.870+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:36.886+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T22:01:36.886+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:36.886+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T22:01:36.920+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:36.920+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:36.920+01:00  INFO 15952 --- [locationService] [nio-9092-exec-2] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:01:36.940+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:01:36.940+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:01:36.946+01:00  INFO 15952 --- [locationService] [nio-9092-exec-3] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:15:55.276+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:15:55.296+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:15:55.478+01:00  INFO 15952 --- [locationService] [nio-9092-exec-9] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:15:56.250+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:15:56.251+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:15:56.258+01:00  INFO 15952 --- [locationService] [nio-9092-exec-6] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:15:56.300+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:15:56.300+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:15:56.304+01:00  INFO 15952 --- [locationService] [io-9092-exec-10] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:15:56.322+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Controller.LocationController      : Requête GET /location/11 - Récupération de la location
+2025-12-25T22:15:56.322+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 11
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:15:56.328+01:00  INFO 15952 --- [locationService] [nio-9092-exec-1] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 11, Ville: Rabat
+2025-12-25T22:15:56.356+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:15:56.356+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:15:56.359+01:00  INFO 15952 --- [locationService] [nio-9092-exec-4] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+2025-12-25T22:15:56.381+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Controller.LocationController      : Requête GET /location/1 - Récupération de la location
+2025-12-25T22:15:56.382+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Récupération de la location avec l'ID: 1
+Hibernate: select l1_0.id,l1_0.ville from location l1_0 where l1_0.id=?
+2025-12-25T22:15:56.386+01:00  INFO 15952 --- [locationService] [nio-9092-exec-5] c.a.l.Service.LocationService            : Location récupérée avec succès - ID: 1, Ville: Kenitra
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30:19 min
+[INFO] Finished at: 2025-12-25T22:17:45+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.0:run (default-cli) on project locationService: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

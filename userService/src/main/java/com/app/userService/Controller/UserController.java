@@ -64,7 +64,15 @@ public class UserController {
         return ResponseEntity.ok(updatedUser);
     }
 
-    // 6. Reviews integration
+    // 6. GET user by role
+    @GetMapping("/roleU")
+    public ResponseEntity<List<UserDTO>> getAllUsersWithRole() {
+        log.info("Requête GET /users - Lister des utilisateurs avec Role = U");
+        List<UserDTO> users = service.getAllUsersWithRole();
+        return ResponseEntity.ok(users);
+    }
+
+    // 7. Reviews integration
     @GetMapping("/reviews")
     public ResponseEntity<List<ReviewDTO>> getAllReviews() {
         log.info("Requête GET /api/users/reviews - Toutes les reviews");

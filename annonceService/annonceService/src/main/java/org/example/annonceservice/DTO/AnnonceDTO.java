@@ -18,16 +18,16 @@ import java.util.Date;
 public class AnnonceDTO {
     private Integer id;
 
-    @NotBlank(message = "La description est obligatoire")
+
     private String description;
 
-    @NotBlank(message = "Le groupe sanguin est obligatoire")
+
     private String bloodType;
 
-    @NotNull(message = "Le niveau d'urgence est obligatoire")
+
     private UrgentLevel urgentLevel;
 
-    @Positive(message = "La quantité doit être positive")
+
     private Integer quantity;
 
     private String status;
@@ -58,6 +58,8 @@ public class AnnonceDTO {
         private Long id;
         private String hospital_nom;
         private String hospital_num;
+        private Float longitude;
+        private Float latitude;
     }
 
 

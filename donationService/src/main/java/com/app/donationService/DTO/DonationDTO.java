@@ -62,6 +62,8 @@ public class DonationDTO{
             private Long id;
             private String hospital_nom;
             private String hospital_num;
+            private Float longitude;
+            private Float latitude;
         }
     }
 

@@ -1,29 +1,58 @@
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] -----------------------< com.app:reviewService >------------------------
-[INFO] Building reviewService 0.0.1-SNAPSHOT
+[INFO] ----------------------< com.app:donationService >-----------------------
+[INFO] Building donationService 0.0.1-SNAPSHOT
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ reviewService >>>
+[INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ donationService >>>
 [INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ reviewService ---
-[INFO] Copying 1 resource from src/main/resources to target/classes
-[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] --- resources:3.3.1:resources (default-resources) @ donationService ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] 
-[INFO] --- compiler:3.14.1:compile (default-compile) @ reviewService ---
-[INFO] Nothing to compile - all classes are up to date.
+[INFO] --- compiler:3.14.1:compile (default-compile) @ donationService ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 13 source files with javac [debug parameters release 17] to target\classes
+[WARNING] /C:/Users/HP/Desktop/blood-donaiton-main/backend/donationService/src/main/java/com/app/donationService/Mapper/DonationMapper.java:[13,17] Unmapped target properties: "user, annonce".
 [INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ reviewService ---
-[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService/src/test/resources
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ donationService ---
+[INFO] skip non existing resourceDirectory C:\Users\HP\Desktop\blood-donaiton-main\backend\donationService\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ reviewService ---
-[INFO] Nothing to compile - all classes are up to date.
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ donationService ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
 [INFO] 
-[INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ reviewService <<<
+[INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ donationService <<<
 [INFO] 
 [INFO] 
-[INFO] --- spring-boot:4.0.0:run (default-cli) @ reviewService ---
+[INFO] --- spring-boot:4.0.0:run (default-cli) @ donationService ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/4.0.0/spring-boot-buildpack-platform-4.0.0.jar
+Progress (1): 0.9/330 kBProgress (1): 2.3/330 kBProgress (1): 3.6/330 kBProgress (1): 5.0/330 kBProgress (1): 6.4/330 kBProgress (1): 7.7/330 kBProgress (1): 9.1/330 kBProgress (1): 10/330 kB Progress (1): 12/330 kBProgress (1): 13/330 kBProgress (1): 15/330 kBProgress (1): 16/330 kBProgress (1): 17/330 kBProgress (1): 19/330 kBProgress (1): 20/330 kBProgress (1): 21/330 kBProgress (1): 23/330 kBProgress (1): 24/330 kBProgress (1): 26/330 kBProgress (1): 27/330 kBProgress (1): 28/330 kBProgress (1): 29/330 kBProgress (1): 31/330 kBProgress (1): 32/330 kBProgress (1): 33/330 kBProgress (1): 35/330 kBProgress (1): 36/330 kBProgress (1): 37/330 kBProgress (1): 39/330 kBProgress (1): 40/330 kBProgress (1): 41/330 kBProgress (1): 43/330 kBProgress (1): 44/330 kBProgress (1): 46/330 kBProgress (1): 47/330 kBProgress (1): 48/330 kBProgress (1): 50/330 kBProgress (1): 51/330 kBProgress (1): 52/330 kBProgress (1): 54/330 kBProgress (1): 55/330 kBProgress (1): 59/330 kBProgress (1): 64/330 kBProgress (1): 68/330 kBProgress (1): 72/330 kBProgress (1): 76/330 kBProgress (1): 81/330 kBProgress (1): 85/330 kBProgress (1): 89/330 kBProgress (1): 93/330 kBProgress (1): 97/330 kBProgress (1): 102/330 kBProgress (1): 106/330 kBProgress (1): 110/330 kBProgress (1): 114/330 kBProgress (1): 119/330 kBProgress (1): 123/330 kBProgress (1): 127/330 kBProgress (1): 131/330 kBProgress (1): 136/330 kBProgress (1): 140/330 kBProgress (1): 144/330 kBProgress (1): 148/330 kBProgress (1): 152/330 kBProgress (1): 157/330 kBProgress (1): 159/330 kBProgress (1): 163/330 kBProgress (1): 167/330 kBProgress (1): 172/330 kBProgress (1): 176/330 kBProgress (1): 180/330 kBProgress (1): 184/330 kBProgress (1): 188/330 kBProgress (1): 193/330 kBProgress (1): 197/330 kBProgress (1): 201/330 kBProgress (1): 205/330 kBProgress (1): 210/330 kBProgress (1): 214/330 kBProgress (1): 218/330 kBProgress (1): 222/330 kBProgress (1): 239/330 kBProgress (1): 255/330 kBProgress (1): 271/330 kBProgress (1): 288/330 kBProgress (1): 290/330 kBProgress (1): 306/330 kBProgress (1): 323/330 kBProgress (1): 330 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/4.0.0/spring-boot-buildpack-platform-4.0.0.jar (330 kB at 147 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/4.0.0/spring-boot-loader-tools-4.0.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar
+Progress (1): 0/1.4 MBProgress (1): 0/1.4 MBProgress (1): 0/1.4 MBProgress (1): 0/1.4 MBProgress (1): 0.1/1.4 MBProgress (1): 0.1/1.4 MBProgress (1): 0.1/1.4 MBProgress (1): 0.1/1.4 MBProgress (1): 0.1/1.4 MBProgress (1): 0.1/1.4 MBProgress (1): 0.2/1.4 MBProgress (1): 0.2/1.4 MBProgress (1): 0.2/1.4 MBProgress (1): 0.2/1.4 MBProgress (1): 0.2/1.4 MBProgress (1): 0.2/1.4 MBProgress (2): 0.2/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (2): 0.3/1.4 MB | 0/2.0 MBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 0.9/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 2.3/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 2.3/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 3.6/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 5.0/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.3/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (3): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.4/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 6.4/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 7.7/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 9.1/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 10/373 kB | 0/1.1 MB Progress (4): 0.5/1.4 MB | 0.1/2.0 MB | 10/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 11/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 13/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 14/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 16/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MBProgress (4): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 0.9/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 2.3/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 3.6/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 4.0/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 5.3/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.5/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 6.7/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 8.1/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 9.5/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 11/339 kB Progress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 11/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 12/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 14/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 14/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 14/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 15/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 16/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 18/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 19/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 20/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 20/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 20/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 17/373 kB | 0/1.1 MB | 22/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 18/373 kB | 0/1.1 MB | 22/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 18/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 20/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 21/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 21/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 21/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 22/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 24/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 24/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 25/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 26/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 26/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 28/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 29/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 29/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 31/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 23/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 25/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 26/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 27/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 32/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 33/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 35/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 36/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.1/2.0 MB | 37/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 37/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 39/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 39/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 40/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 40/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 42/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 43/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 44/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 44/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 46/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 47/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 47/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 48/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 50/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 29/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 30/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 30/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 31/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 31/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 33/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 33/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 34/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 35/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 35/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 35/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 35/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 35/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 37/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 38/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 38/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 38/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 38/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 38/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 38/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 38/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 40/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 51/373 kB | 0/1.1 MB | 40/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 52/373 kB | 0/1.1 MB | 40/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 52/373 kB | 0/1.1 MB | 41/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 52/373 kB | 0/1.1 MB | 41/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 52/373 kB | 0/1.1 MB | 42/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 52/373 kB | 0/1.1 MB | 42/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 54/373 kB | 0/1.1 MB | 42/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 54/373 kB | 0/1.1 MB | 44/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 54/373 kB | 0/1.1 MB | 44/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 44/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 45/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 46/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 48/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 48/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 49/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 49/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 51/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 52/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 53/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 53/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 55/373 kB | 0/1.1 MB | 55/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 59/373 kB | 0/1.1 MB | 55/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 59/373 kB | 0/1.1 MB | 55/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 59/373 kB | 0/1.1 MB | 59/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 64/373 kB | 0/1.1 MB | 59/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 64/373 kB | 0/1.1 MB | 59/339 kBProgress (5): 0.6/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 59/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 59/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 59/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 63/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 67/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 67/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 72/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 72/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 76/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 76/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 80/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 80/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 80/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 80/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0/1.1 MB | 80/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 80/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 84/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 84/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 84/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 84/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 88/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 93/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 68/373 kB | 0.1/1.1 MB | 93/339 kBProgress (5): 0.7/1.4 MB | 0.2/2.0 MB | 72/373 kB | 0.1/1.1 MB | 93/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 72/373 kB | 0.1/1.1 MB | 93/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 72/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 72/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 76/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 76/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 81/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 81/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 81/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 85/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 89/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 93/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 98/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 98/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 98/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 102/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 102/373 kB | 0.1/1.1 MB | 97/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 102/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 102/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 102/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 102/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 106/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 110/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 114/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 101/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 105/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 110/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.7/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 119/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 123/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 126/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 126/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 130/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 130/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 135/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 139/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 114/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 118/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 119/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 123/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 127/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 131/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 136/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 140/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 144/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 144/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 144/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 144/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 148/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 152/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 152/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 152/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.3/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 143/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 147/373 kB | 0.1/1.1 MB | 157/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 147/373 kB | 0.1/1.1 MB | 161/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 151/373 kB | 0.1/1.1 MB | 161/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 151/373 kB | 0.1/1.1 MB | 165/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 151/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 156/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 160/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 164/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 168/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 173/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 173/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 173/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 173/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 177/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 181/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 185/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 190/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 194/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 198/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 198/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 202/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 206/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 211/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 211/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 215/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 215/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.1/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 169/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 174/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 174/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 178/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 182/339 kBProgress (5): 0.8/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 186/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 186/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 186/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 186/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 186/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 191/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 195/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 219/373 kB | 0.2/1.1 MB | 199/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 223/373 kB | 0.2/1.1 MB | 199/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 240/373 kB | 0.2/1.1 MB | 199/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 240/373 kB | 0.2/1.1 MB | 199/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.4/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 203/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 207/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 212/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 216/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 0.9/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 240/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 256/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 256/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 257/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 257/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 257/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 257/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 274/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 274/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 290/373 kB | 0.2/1.1 MB | 220/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 290/373 kB | 0.2/1.1 MB | 237/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 290/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 290/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 290/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 290/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 306/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 306/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 306/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 306/373 kB | 0.2/1.1 MB | 250/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 306/373 kB | 0.2/1.1 MB | 266/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 323/373 kB | 0.2/1.1 MB | 266/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 323/373 kB | 0.2/1.1 MB | 266/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 323/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 323/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 323/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 323/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 339/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 347/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 355/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 355/373 kB | 0.2/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.5/2.0 MB | 355/373 kB | 0.3/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 283/339 kBProgress (5): 1.0/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 299/339 kBProgress (5): 1.0/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 299/339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 299/339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 299/339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 315/339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 315/339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 332/339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 332/339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kB    Progress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.1/1.4 MB | 0.6/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.1/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.2/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.3/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.7/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.4/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.5/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.5/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.5/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.5/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.5/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.5/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.5/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.6/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.6/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.6/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.6/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.6/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.6/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.3/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.7/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.8/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.8/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.8/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.8/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.8/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.8/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.8/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.9/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.9/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.9/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.9/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.9/1.1 MB | 339 kBProgress (5): 1.4/1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.9/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 355/373 kB | 0.9/1.1 MB | 339 kB    Progress (5): 1.4 MB | 0.8/2.0 MB | 355/373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 355/373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 355/373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 355/373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 355/373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 372/373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 373 kB | 1.0/1.1 MB | 339 kB    Progress (5): 1.4 MB | 0.8/2.0 MB | 373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 373 kB | 1.0/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.8/2.0 MB | 373 kB | 1.1/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1/1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1 MB | 339 kB    Progress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 0.9/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.0/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.0/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.0/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.0/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.0/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.0/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.0/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.1/2.0 MB | 373 kB | 1.1 MB | 339 kBProgress (5): 1.4 MB | 1.1/2.0 MB | 373 kB | 1.1 MB | 339 kB                                                            Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar (373 kB at 297 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/4.0.0/spring-boot-loader-tools-4.0.0.jar (339 kB at 270 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar
+Progress (3): 1.4 MB | 1.1/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.1/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.1/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.1/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.2/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.2/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.2/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.2/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.2/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.2/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.3/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.3/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.3/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.3/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.3/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.3/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.4/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.4/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.4/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.4/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.4/2.0 MB | 1.1 MBProgress (3): 1.4 MB | 1.4/2.0 MB | 1.1 MB                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar (1.1 MB at 858 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna-platform/5.17.0/jna-platform-5.17.0.jar (1.4 MB at 1.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.0/maven-shade-plugin-3.6.0.jar
+Progress (1): 1.5/2.0 MBProgress (1): 1.5/2.0 MBProgress (1): 1.5/2.0 MBProgress (1): 1.5/2.0 MBProgress (1): 1.5/2.0 MBProgress (1): 1.5/2.0 MBProgress (2): 1.5/2.0 MB | 4.0/58 kBProgress (2): 1.5/2.0 MB | 20/58 kB Progress (3): 1.5/2.0 MB | 20/58 kB | 7.7/168 kBProgress (3): 1.5/2.0 MB | 20/58 kB | 16/168 kB Progress (3): 1.5/2.0 MB | 37/58 kB | 16/168 kBProgress (3): 1.6/2.0 MB | 37/58 kB | 16/168 kBProgress (3): 1.6/2.0 MB | 37/58 kB | 16/168 kBProgress (3): 1.6/2.0 MB | 53/58 kB | 16/168 kBProgress (3): 1.6/2.0 MB | 58 kB | 16/168 kB   Progress (3): 1.6/2.0 MB | 58 kB | 20/168 kBProgress (3): 1.6/2.0 MB | 58 kB | 37/168 kBProgress (3): 1.6/2.0 MB | 58 kB | 53/168 kBProgress (3): 1.6/2.0 MB | 58 kB | 70/168 kBProgress (3): 1.6/2.0 MB | 58 kB | 70/168 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 7.7/150 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 16/150 kB Progress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 20/150 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 20/150 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 37/150 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 37/150 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 53/150 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 53/150 kBProgress (4): 1.6/2.0 MB | 58 kB | 70/168 kB | 70/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 70/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 86/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 102/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 102/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 102/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 119/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 135/150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 150 kB    Progress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 150 kBProgress (4): 1.7/2.0 MB | 58 kB | 70/168 kB | 150 kBProgress (5): 1.7/2.0 MB | 58 kB | 70/168 kB | 150 kB | 7.7/125 kBProgress (5): 1.7/2.0 MB | 58 kB | 70/168 kB | 150 kB | 7.7/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 7.7/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 7.7/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 7.7/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 16/125 kB Progress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 20/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 20/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 37/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 37/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 70/168 kB | 150 kB | 37/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 86/168 kB | 150 kB | 37/125 kBProgress (5): 1.8/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 1.9/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 1.9/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 1.9/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 1.9/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 1.9/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 1.9/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 1.9/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 2.0/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 2.0/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 2.0/2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kBProgress (5): 2.0 MB | 58 kB | 102/168 kB | 150 kB | 37/125 kB    Progress (5): 2.0 MB | 58 kB | 102/168 kB | 150 kB | 53/125 kBProgress (5): 2.0 MB | 58 kB | 102/168 kB | 150 kB | 69/125 kBProgress (5): 2.0 MB | 58 kB | 119/168 kB | 150 kB | 69/125 kBProgress (5): 2.0 MB | 58 kB | 135/168 kB | 150 kB | 69/125 kBProgress (5): 2.0 MB | 58 kB | 151/168 kB | 150 kB | 69/125 kBProgress (5): 2.0 MB | 58 kB | 151/168 kB | 150 kB | 86/125 kBProgress (5): 2.0 MB | 58 kB | 151/168 kB | 150 kB | 102/125 kBProgress (5): 2.0 MB | 58 kB | 151/168 kB | 150 kB | 119/125 kBProgress (5): 2.0 MB | 58 kB | 151/168 kB | 150 kB | 125 kB                                                               Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.0/maven-shade-plugin-3.6.0.jar (150 kB at 99 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar
+Progress (4): 2.0 MB | 58 kB | 168 kB | 125 kBProgress (5): 2.0 MB | 58 kB | 168 kB | 125 kB | 4.0/73 kBProgress (5): 2.0 MB | 58 kB | 168 kB | 125 kB | 20/73 kB Progress (5): 2.0 MB | 58 kB | 168 kB | 125 kB | 37/73 kBProgress (5): 2.0 MB | 58 kB | 168 kB | 125 kB | 53/73 kBProgress (5): 2.0 MB | 58 kB | 168 kB | 125 kB | 69/73 kBProgress (5): 2.0 MB | 58 kB | 168 kB | 125 kB | 73 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.jar (125 kB at 74 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar
+Progress (5): 2.0 MB | 58 kB | 168 kB | 73 kB | 7.7/52 kBProgress (5): 2.0 MB | 58 kB | 168 kB | 73 kB | 16/52 kB Progress (5): 2.0 MB | 58 kB | 168 kB | 73 kB | 20/52 kBProgress (5): 2.0 MB | 58 kB | 168 kB | 73 kB | 37/52 kB                                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar (168 kB at 94 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.10/jdependency-2.10.jar
+Progress (4): 2.0 MB | 58 kB | 73 kB | 52 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar (2.0 MB at 1.1 MB/s)
+Progress (4): 58 kB | 73 kB | 52 kB | 7.7/416 kBProgress (4): 58 kB | 73 kB | 52 kB | 11/416 kB Progress (4): 58 kB | 73 kB | 52 kB | 28/416 kBProgress (4): 58 kB | 73 kB | 52 kB | 44/416 kBProgress (4): 58 kB | 73 kB | 52 kB | 61/416 kBProgress (4): 58 kB | 73 kB | 52 kB | 77/416 kBProgress (4): 58 kB | 73 kB | 52 kB | 93/416 kBProgress (4): 58 kB | 73 kB | 52 kB | 110/416 kBProgress (4): 58 kB | 73 kB | 52 kB | 126/416 kB                                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar (58 kB at 30 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar (73 kB at 39 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar (52 kB at 27 kB/s)
+Progress (1): 142/416 kBProgress (1): 159/416 kBProgress (1): 175/416 kBProgress (1): 192/416 kBProgress (1): 208/416 kBProgress (1): 224/416 kBProgress (1): 241/416 kBProgress (1): 257/416 kBProgress (1): 274/416 kBProgress (1): 290/416 kBProgress (1): 306/416 kBProgress (1): 323/416 kBProgress (1): 339/416 kBProgress (1): 355/416 kBProgress (1): 372/416 kBProgress (1): 388/416 kBProgress (1): 405/416 kBProgress (1): 416 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/2.10/jdependency-2.10.jar (416 kB at 198 kB/s)
 [INFO] Attaching agents: []
 
   .   ____          _            __ _ _
@@ -35,69 +64,624 @@
 
  :: Spring Boot ::                (v4.0.0)
 
-2025-12-19T23:24:56.783+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.a.r.ReviewServiceApplication           : Starting ReviewServiceApplication using Java 17.0.17 with PID 38497 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService)
-2025-12-19T23:24:56.786+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.a.r.ReviewServiceApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-12-19T23:24:56.829+01:00  INFO 38497 --- [reviewService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-12-19T23:24:56.829+01:00  INFO 38497 --- [reviewService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-12-19T23:24:57.373+01:00  INFO 38497 --- [reviewService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-19T23:24:57.456+01:00  INFO 38497 --- [reviewService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
-2025-12-19T23:24:57.604+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1cfaf71e-a7dd-35d5-9747-2c8fdd0154c7
-2025-12-19T23:24:57.867+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
-2025-12-19T23:24:57.877+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-19T23:24:57.877+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-19T23:24:57.898+01:00  INFO 38497 --- [reviewService] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1069 ms
-2025-12-19T23:24:57.991+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-19T23:24:58.017+01:00  INFO 38497 --- [reviewService] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-19T23:24:58.236+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-19T23:24:58.253+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-19T23:24:58.424+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57fae9c8
-2025-12-19T23:24:58.425+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-19T23:24:58.453+01:00  WARN 38497 --- [reviewService] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-19T23:24:58.462+01:00  INFO 38497 --- [reviewService] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/review_db?createDatabaseIfNotExist=true]
+2025-12-25T21:49:01.217+01:00  INFO 16036 --- [donationService] [           main] c.a.d.DonationServiceApplication         : Starting DonationServiceApplication using Java 17.0.17 with PID 16036 (C:\Users\HP\Desktop\blood-donaiton-main\backend\donationService\target\classes started by Anas Saibari in C:\Users\HP\Desktop\blood-donaiton-main\backend\donationService)
+2025-12-25T21:49:01.301+01:00  INFO 16036 --- [donationService] [           main] c.a.d.DonationServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-25T21:49:12.382+01:00  INFO 16036 --- [donationService] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25T21:49:13.782+01:00  INFO 16036 --- [donationService] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1319 ms. Found 1 JPA repository interface.
+2025-12-25T21:49:15.125+01:00  INFO 16036 --- [donationService] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d320678a-8c56-314b-a658-8dabfe34b4e2
+2025-12-25T21:49:18.537+01:00  INFO 16036 --- [donationService] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9096 (http)
+2025-12-25T21:49:18.625+01:00  INFO 16036 --- [donationService] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-25T21:49:18.625+01:00  INFO 16036 --- [donationService] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-25T21:49:19.196+01:00  INFO 16036 --- [donationService] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 17437 ms
+2025-12-25T21:49:20.568+01:00  INFO 16036 --- [donationService] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-25T21:49:21.000+01:00  INFO 16036 --- [donationService] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-25T21:49:37.643+01:00  INFO 16036 --- [donationService] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25T21:49:38.201+01:00  INFO 16036 --- [donationService] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-25T21:49:45.442+01:00  INFO 16036 --- [donationService] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4177d422
+2025-12-25T21:49:45.449+01:00  INFO 16036 --- [donationService] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-25T21:49:47.361+01:00  WARN 16036 --- [donationService] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-25T21:49:47.473+01:00  INFO 16036 --- [donationService] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/donation_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
-	Database version: 8.0.44
-	Default catalog/schema: review_db/undefined
+	Database version: 9.1
+	Default catalog/schema: donation_db/undefined
 	Autocommit mode: undefined/unknown
 	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
 	JDBC fetch size: none
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-19T23:24:58.999+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-19T23:24:59.039+01:00  INFO 38497 --- [reviewService] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-19T23:24:59.084+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-12-19T23:24:59.452+01:00  WARN 38497 --- [reviewService] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-19T23:24:59.774+01:00  INFO 38497 --- [reviewService] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
-2025-12-19T23:24:59.852+01:00  WARN 38497 --- [reviewService] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-19T23:24:59.873+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-12-19T23:24:59.884+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-12-19T23:24:59.885+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-12-19T23:24:59.889+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-12-19T23:25:00.001+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-12-19T23:25:00.002+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-12-19T23:25:00.003+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-19T23:25:00.004+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1766183100003 with initial instances count: 0
-2025-12-19T23:25:00.006+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEWSERVICE with eureka with status UP
-2025-12-19T23:25:00.006+01:00  INFO 38497 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1766183100006, current=UP, previous=STARTING]
-2025-12-19T23:25:00.007+01:00  INFO 38497 --- [reviewService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEWSERVICE/192.168.1.2:reviewService:9095: registering service...
-2025-12-19T23:25:00.015+01:00  INFO 38497 --- [reviewService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
-2025-12-19T23:25:00.016+01:00  INFO 38497 --- [reviewService] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
-2025-12-19T23:25:00.026+01:00  INFO 38497 --- [reviewService] [  restartedMain] c.a.r.ReviewServiceApplication           : Started ReviewServiceApplication in 3.519 seconds (process running for 3.996)
-2025-12-19T23:25:00.042+01:00  INFO 38497 --- [reviewService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEWSERVICE/192.168.1.2:reviewService:9095 - registration status: 204
-2025-12-19T23:25:30.005+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-12-19T23:25:30.006+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2025-12-19T23:25:30.007+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-12-19T23:25:30.026+01:00  INFO 38497 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-12-19T23:27:53.347+01:00  WARN 38497 --- [reviewService] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s805ms).
+2025-12-25T21:49:59.074+01:00  INFO 16036 --- [donationService] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-25T21:49:59.873+01:00  INFO 16036 --- [donationService] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25T21:50:01.662+01:00  INFO 16036 --- [donationService] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-25T21:50:03.577+01:00  WARN 16036 --- [donationService] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-25T21:50:09.269+01:00  INFO 16036 --- [donationService] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2025-12-25T21:50:09.409+01:00  WARN 16036 --- [donationService] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-25T21:50:09.487+01:00  INFO 16036 --- [donationService] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-25T21:50:09.631+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-25T21:50:09.650+01:00  INFO 16036 --- [donationService] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-25T21:50:09.689+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-25T21:50:09.689+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-25T21:50:09.689+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-25T21:50:09.689+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-25T21:50:09.689+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-25T21:50:09.689+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-25T21:50:09.689+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-25T21:50:17.264+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-25T21:50:17.268+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-25T21:50:17.272+01:00  INFO 16036 --- [donationService] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-25T21:50:17.278+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1766695817276 with initial instances count: 0
+2025-12-25T21:50:17.292+01:00  INFO 16036 --- [donationService] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DONATIONSERVICE with eureka with status UP
+2025-12-25T21:50:17.296+01:00  INFO 16036 --- [donationService] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1766695817296, current=UP, previous=STARTING]
+2025-12-25T21:50:17.300+01:00  INFO 16036 --- [donationService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONATIONSERVICE/192.168.56.1:donationService:9096: registering service...
+2025-12-25T21:50:17.361+01:00  INFO 16036 --- [donationService] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9096 (http) with context path '/'
+2025-12-25T21:50:17.361+01:00  INFO 16036 --- [donationService] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
+2025-12-25T21:50:17.632+01:00  INFO 16036 --- [donationService] [           main] c.a.d.DonationServiceApplication         : Started DonationServiceApplication in 79.614 seconds (process running for 83.335)
+2025-12-25T21:50:17.772+01:00  INFO 16036 --- [donationService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DONATIONSERVICE/192.168.56.1:donationService:9096 - registration status: 204
+2025-12-25T21:50:47.294+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-25T21:50:47.367+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-25T21:50:47.369+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-25T21:50:47.369+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-25T21:50:47.369+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-25T21:50:47.369+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-12-25T21:50:47.369+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-25T21:50:47.675+01:00  INFO 16036 --- [donationService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-25T21:52:42.228+01:00  INFO 16036 --- [donationService] [nio-9096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-25T21:52:42.243+01:00  INFO 16036 --- [donationService] [nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-25T21:52:42.461+01:00  INFO 16036 --- [donationService] [nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 217 ms
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+2025-12-25T21:52:44.861+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-1] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Aucune donation pour cet utilisateur
+
+java.lang.RuntimeException: Aucune donation pour cet utilisateur
+	at com.app.donationService.Service.DonationService.getDonationsByUserId(DonationService.java:150) ~[classes/:na]
+	at com.app.donationService.Controller.DonationController.getDonationsByUserId(DonationController.java:62) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-25T21:52:47.910+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-2] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Method parameter 'userId': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'userId': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "undefined"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:295) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:134) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:230) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:711) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1163) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:204) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:434) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:407) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:158) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:75) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:51) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:843) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:287) ~[spring-web-7.0.1.jar:7.0.1]
+	... 47 common frames omitted
+
+2025-12-25T21:55:09.708+01:00  INFO 16036 --- [donationService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+2025-12-25T21:55:41.594+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-5] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Aucune donation pour cet utilisateur
+
+java.lang.RuntimeException: Aucune donation pour cet utilisateur
+	at com.app.donationService.Service.DonationService.getDonationsByUserId(DonationService.java:150) ~[classes/:na]
+	at com.app.donationService.Controller.DonationController.getDonationsByUserId(DonationController.java:62) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+2025-12-25T21:56:11.917+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-6] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Aucune donation pour cet utilisateur
+
+java.lang.RuntimeException: Aucune donation pour cet utilisateur
+	at com.app.donationService.Service.DonationService.getDonationsByUserId(DonationService.java:150) ~[classes/:na]
+	at com.app.donationService.Controller.DonationController.getDonationsByUserId(DonationController.java:62) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+2025-12-25T21:56:13.820+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-9] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Aucune donation pour cet utilisateur
+
+java.lang.RuntimeException: Aucune donation pour cet utilisateur
+	at com.app.donationService.Service.DonationService.getDonationsByUserId(DonationService.java:150) ~[classes/:na]
+	at com.app.donationService.Controller.DonationController.getDonationsByUserId(DonationController.java:62) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+2025-12-25T21:56:15.175+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-3] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Aucune donation pour cet utilisateur
+
+java.lang.RuntimeException: Aucune donation pour cet utilisateur
+	at com.app.donationService.Service.DonationService.getDonationsByUserId(DonationService.java:150) ~[classes/:na]
+	at com.app.donationService.Controller.DonationController.getDonationsByUserId(DonationController.java:62) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-25T21:56:23.567+01:00  INFO 16036 --- [donationService] [nio-9096-exec-4] c.a.d.Controller.DonationController      : Création d'une donation (userId=4, annonceId=2)
+Hibernate: select d1_0.id from donation d1_0 where d1_0.user_id=? and d1_0.annonce_id=? limit ?
+2025-12-25T21:56:24.236+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-4] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Groupe sanguin incompatible : Vous êtes O+, l'annonce demande A+
+
+java.lang.RuntimeException: Groupe sanguin incompatible : Vous êtes O+, l'annonce demande A+
+	at com.app.donationService.Service.DonationService.createDonation(DonationService.java:75) ~[classes/:na]
+	at com.app.donationService.Controller.DonationController.createDonation(DonationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+2025-12-25T21:56:33.077+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-8] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Aucune donation pour cet utilisateur
+
+java.lang.RuntimeException: Aucune donation pour cet utilisateur
+	at com.app.donationService.Service.DonationService.getDonationsByUserId(DonationService.java:150) ~[classes/:na]
+	at com.app.donationService.Controller.DonationController.getDonationsByUserId(DonationController.java:62) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-25T21:56:44.773+01:00  INFO 16036 --- [donationService] [io-9096-exec-10] c.a.d.Controller.DonationController      : Création d'une donation (userId=4, annonceId=1)
+Hibernate: select d1_0.id from donation d1_0 where d1_0.user_id=? and d1_0.annonce_id=? limit ?
+Hibernate: insert into donation (annonce_id,application_date,confirmed,user_id) values (?,?,?,?)
+2025-12-25T21:56:45.407+01:00  INFO 16036 --- [donationService] [io-9096-exec-10] c.a.d.Service.DonationService            : Donation créée avec succès (id=11) - User: 4, Annonce: 1, Type sanguin: O+
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.id=?
+Hibernate: update donation set annonce_id=?,application_date=?,confirmed=?,user_id=? where id=?
+2025-12-25T21:59:40.570+01:00  INFO 16036 --- [donationService] [nio-9096-exec-5] c.a.d.Service.DonationService            : Donation 11 confirmée
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0
+2025-12-25T22:00:09.757+01:00  INFO 16036 --- [donationService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0
+2025-12-25T22:01:16.459+01:00 ERROR 16036 --- [donationService] [nio-9096-exec-4] c.a.d.Exception.GlobalExceptionHandler   : Erreur inattendue: Method parameter 'hospitalId': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "undefined"
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'hospitalId': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "undefined"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:295) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:134) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:230) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.WeightCalculatorFilter.doFilter(WeightCalculatorFilter.java:233) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.cloud.gateway.server.mvc.filter.FormFilter.doFilter(FormFilter.java:93) ~[spring-cloud-gateway-server-webmvc-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "undefined"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
+	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[na:na]
+	at java.base/java.lang.Integer.valueOf(Integer.java:999) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:201) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:434) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:407) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:158) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:75) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:51) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:843) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:287) ~[spring-web-7.0.1.jar:7.0.1]
+	... 47 common frames omitted
+
+Hibernate: select d1_0.id,d1_0.annonce_id,d1_0.application_date,d1_0.confirmed,d1_0.user_id from donation d1_0 where d1_0.user_id=?
+2025-12-25T22:05:09.849+01:00  INFO 16036 --- [donationService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-25T22:10:10.170+01:00  INFO 16036 --- [donationService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-25T22:15:10.226+01:00  INFO 16036 --- [donationService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31:16 min
+[INFO] Finished at: 2025-12-25T22:18:41+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.0:run (default-cli) on project donationService: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
