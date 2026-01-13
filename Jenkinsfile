@@ -229,62 +229,7 @@ pipeline {
             }
         }
         
-        stage('Push Docker Images') {
-            when {
-                expression { 
-                    try {
-                        bat(script: 'docker --version', returnStatus: true) == 0
-                    } catch (Exception e) {
-                        false
-                    }
-                }
-            }
-            steps {
-                script {
-                    echo "⬆️ PUSH DES IMAGES DOCKER"
-                    echo "========================="
-                    
-                    // Utiliser withCredentials au lieu de withDockerRegistry
-                    withCredentials([usernamePassword(
-                        credentialsId: 'dockerhub-creds',
-                        usernameVariable: 'DOCKER_USER',
-                        passwordVariable: 'DOCKER_PASS'
-                    )]) {
-                        // Login Docker
-                        bat """
-                            echo %DOCKER_PASS% | docker login -u %DOCKER_USER% --password-stdin
-                        """
-                        
-                        def services = [
-                            "annonceservice",
-                            "chatservice",
-                            "discoveryservice",
-                            "donationservice",
-                            "gatewayservice",
-                            "hospitalservice",
-                            "locationservice",
-                            "reviewservice",
-                            "userservice"
-                        ]
-                        
-                        services.each { serviceName ->
-                            try {
-                                bat """
-                                    docker push ${DOCKER_REGISTRY}/${serviceName}:latest
-                                """
-                                echo "✅ Image poussée: ${serviceName}"
-                            } catch (Exception e) {
-                                echo "❌ Échec push: ${serviceName}"
-                                currentBuild.result = 'UNSTABLE'
-                            }
-                        }
-                        
-                        // Logout
-                        bat "docker logout"
-                    }
-                }
-            }
-        }
+        
         
         stage('Deploy to Kubernetes') {
             when {
