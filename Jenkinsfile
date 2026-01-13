@@ -29,49 +29,17 @@ pipeline {
             }
         }
         
-        stage('Verify Structure') {
+        stage('Navigate to Backend Directory') {
             steps {
                 script {
-                    echo "🔍 VÉRIFICATION DE LA STRUCTURE"
-                    echo "================================"
-                    
-                    // Vérifier chaque service
-                    def services = [
-                        [name: "annonceService", path: "backend/annonceService/annonceService"],
-                        [name: "chatService", path: "backend/chatService"],
-                        [name: "discoveryService", path: "backend/discoveryService"],
-                        [name: "donationService", path: "backend/donationService"],
-                        [name: "gatewayService", path: "backend/gatewayService"],
-                        [name: "hospitalService", path: "backend/hospitalService"],
-                        [name: "locationService", path: "backend/locationService"],
-                        [name: "reviewService", path: "backend/reviewService"],
-                        [name: "userService", path: "backend/userService"]
-                    ]
-                    
-                    services.each { service ->
-                        if (fileExists(service.path)) {
-                            echo "✅ ${service.name} trouvé à: ${service.path}"
-                            
-                            // Vérifier pom.xml
-                            def pomPath = "${service.path}/pom.xml"
-                            if (fileExists(pomPath)) {
-                                echo "   📄 pom.xml: OUI"
-                            } else {
-                                echo "   ❌ pom.xml: NON"
-                                // Chercher dans le dossier
-                                bat "dir \"${service.path}\" 2>nul"
-                            }
-                            
-                            // Vérifier Dockerfile
-                            def dockerPath = "${service.path}/Dockerfile"
-                            if (fileExists(dockerPath)) {
-                                echo "   🐳 Dockerfile: OUI"
-                            } else {
-                                echo "   ⚠️ Dockerfile: NON"
-                            }
-                        } else {
-                            echo "❌ ${service.name} NON trouvé à: ${service.path}"
+                    echo "📁 Navigation vers le dossier backend..."
+                    if (fileExists('backend')) {
+                        dir('backend') {
+                            echo "✅ Dans le dossier backend"
+                            bat 'dir'
                         }
+                    } else {
+                        error "❌ Le dossier 'backend' n'existe pas dans le dépôt!"
                     }
                 }
             }
@@ -80,44 +48,55 @@ pipeline {
         stage('Build Services') {
             steps {
                 script {
-                    echo "🏗️ CONSTRUCTION DES SERVICES"
-                    echo "============================="
-                    
-                    def services = [
-                        [name: "annonceService", path: "backend/annonceService/annonceService"],
-                        [name: "chatService", path: "backend/chatService"],
-                        [name: "discoveryService", path: "backend/discoveryService"],
-                        [name: "donationService", path: "backend/donationService"],
-                        [name: "gatewayService", path: "backend/gatewayService"],
-                        [name: "hospitalService", path: "backend/hospitalService"],
-                        [name: "locationService", path: "backend/locationService"],
-                        [name: "reviewService", path: "backend/reviewService"],
-                        [name: "userService", path: "backend/userService"]
-                    ]
-                    
-                    services.each { service ->
-                        if (fileExists(service.path)) {
-                            dir(service.path) {
-                                stage("Build ${service.name}") {
-                                    echo "🔨 Construction de ${service.name}..."
-                                    
-                                    // Vérifier si pom.xml existe
-                                    if (fileExists('pom.xml')) {
-                                        try {
-                                            bat 'mvn clean compile'
-                                            echo "✅ ${service.name} construit avec succès"
-                                        } catch (Exception e) {
-                                            echo "❌ Échec de la construction de ${service.name}"
-                                            echo "Erreur: ${e.getMessage()}"
-                                            // Ne pas échouer tout le pipeline pour un service
+                    dir('backend') {
+                        echo "🏗️ CONSTRUCTION DES SERVICES DANS BACKEND/"
+                        echo "============================================"
+                        
+                        // Structure: annonceService est dans annonceService/annonceService
+                        // Les autres services sont directement dans leur dossier
+                        def services = [
+                            [name: "annonceService", subdir: "annonceService"],
+                            [name: "chatService", subdir: ""],
+                            [name: "discoveryService", subdir: ""],
+                            [name: "donationService", subdir: ""],
+                            [name: "gatewayService", subdir: ""],
+                            [name: "hospitalService", subdir: ""],
+                            [name: "locationService", subdir: ""],
+                            [name: "reviewService", subdir: ""],
+                            [name: "userService", subdir: ""]
+                        ]
+                        
+                        services.each { service ->
+                            // Déterminer le chemin du service
+                            def servicePath = service.name
+                            if (service.subdir) {
+                                servicePath = "${service.name}/${service.subdir}"
+                            }
+                            
+                            if (fileExists(servicePath)) {
+                                dir(servicePath) {
+                                    stage("Build ${service.name}") {
+                                        echo "🔨 Construction de ${service.name} dans ${servicePath}"
+                                        
+                                        // Vérifier si pom.xml existe
+                                        if (fileExists('pom.xml')) {
+                                            try {
+                                                bat 'mvn clean compile'
+                                                echo "✅ ${service.name} construit avec succès"
+                                            } catch (Exception e) {
+                                                echo "❌ Échec de la construction de ${service.name}"
+                                                echo "Erreur: ${e.getMessage()}"
+                                                // Continuer avec les autres services
+                                            }
+                                        } else {
+                                            echo "⚠️ pom.xml non trouvé pour ${service.name}, skipping..."
+                                            bat 'dir 2>nul || echo "Dossier vide"'
                                         }
-                                    } else {
-                                        echo "⚠️ pom.xml non trouvé pour ${service.name}, skipping..."
                                     }
                                 }
+                            } else {
+                                echo "⚠️ Service ${service.name} non trouvé à ${servicePath}, skipping..."
                             }
-                        } else {
-                            echo "⚠️ Service ${service.name} non trouvé, skipping..."
                         }
                     }
                 }
@@ -127,32 +106,40 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    echo "🧪 EXÉCUTION DES TESTS"
-                    echo "======================"
-                    
-                    def services = [
-                        [name: "annonceService", path: "backend/annonceService/annonceService"],
-                        [name: "chatService", path: "backend/chatService"],
-                        [name: "discoveryService", path: "backend/discoveryService"],
-                        [name: "donationService", path: "backend/donationService"],
-                        [name: "gatewayService", path: "backend/gatewayService"],
-                        [name: "hospitalService", path: "backend/hospitalService"],
-                        [name: "locationService", path: "backend/locationService"],
-                        [name: "reviewService", path: "backend/reviewService"],
-                        [name: "userService", path: "backend/userService"]
-                    ]
-                    
-                    services.each { service ->
-                        if (fileExists(service.path)) {
-                            dir(service.path) {
-                                stage("Test ${service.name}") {
-                                    if (fileExists('pom.xml')) {
-                                        try {
-                                            bat 'mvn test'
-                                            echo "✅ Tests de ${service.name} exécutés"
-                                        } catch (Exception e) {
-                                            echo "⚠️ Tests échoués pour ${service.name}"
-                                            // Continue même si les tests échouent
+                    dir('backend') {
+                        echo "🧪 EXÉCUTION DES TESTS"
+                        echo "======================"
+                        
+                        def services = [
+                            [name: "annonceService", subdir: "annonceService"],
+                            [name: "chatService", subdir: ""],
+                            [name: "discoveryService", subdir: ""],
+                            [name: "donationService", subdir: ""],
+                            [name: "gatewayService", subdir: ""],
+                            [name: "hospitalService", subdir: ""],
+                            [name: "locationService", subdir: ""],
+                            [name: "reviewService", subdir: ""],
+                            [name: "userService", subdir: ""]
+                        ]
+                        
+                        services.each { service ->
+                            def servicePath = service.name
+                            if (service.subdir) {
+                                servicePath = "${service.name}/${service.subdir}"
+                            }
+                            
+                            if (fileExists(servicePath)) {
+                                dir(servicePath) {
+                                    stage("Test ${service.name}") {
+                                        if (fileExists('pom.xml')) {
+                                            try {
+                                                echo "🧪 Exécution des tests pour ${service.name}..."
+                                                bat 'mvn test'
+                                                echo "✅ Tests de ${service.name} exécutés"
+                                            } catch (Exception e) {
+                                                echo "⚠️ Tests échoués pour ${service.name}"
+                                                // Continue même si les tests échouent
+                                            }
                                         }
                                     }
                                 }
@@ -166,31 +153,44 @@ pipeline {
         stage('Package Services') {
             steps {
                 script {
-                    echo "📦 EMPAQUETAGE DES SERVICES"
-                    echo "============================"
-                    
-                    def services = [
-                        [name: "annonceService", path: "backend/annonceService/annonceService"],
-                        [name: "chatService", path: "backend/chatService"],
-                        [name: "discoveryService", path: "backend/discoveryService"],
-                        [name: "donationService", path: "backend/donationService"],
-                        [name: "gatewayService", path: "backend/gatewayService"],
-                        [name: "hospitalService", path: "backend/hospitalService"],
-                        [name: "locationService", path: "backend/locationService"],
-                        [name: "reviewService", path: "backend/reviewService"],
-                        [name: "userService", path: "backend/userService"]
-                    ]
-                    
-                    services.each { service ->
-                        if (fileExists(service.path)) {
-                            dir(service.path) {
-                                stage("Package ${service.name}") {
-                                    if (fileExists('pom.xml')) {
-                                        try {
-                                            bat 'mvn package -DskipTests'
-                                            echo "✅ ${service.name} empaqueté"
-                                        } catch (Exception e) {
-                                            echo "❌ Échec de l'empaquetage de ${service.name}"
+                    dir('backend') {
+                        echo "📦 EMPAQUETAGE DES SERVICES"
+                        echo "============================"
+                        
+                        def services = [
+                            [name: "annonceService", subdir: "annonceService"],
+                            [name: "chatService", subdir: ""],
+                            [name: "discoveryService", subdir: ""],
+                            [name: "donationService", subdir: ""],
+                            [name: "gatewayService", subdir: ""],
+                            [name: "hospitalService", subdir: ""],
+                            [name: "locationService", subdir: ""],
+                            [name: "reviewService", subdir: ""],
+                            [name: "userService", subdir: ""]
+                        ]
+                        
+                        services.each { service ->
+                            def servicePath = service.name
+                            if (service.subdir) {
+                                servicePath = "${service.name}/${service.subdir}"
+                            }
+                            
+                            if (fileExists(servicePath)) {
+                                dir(servicePath) {
+                                    stage("Package ${service.name}") {
+                                        if (fileExists('pom.xml')) {
+                                            try {
+                                                echo "📦 Empaquetage de ${service.name}..."
+                                                bat 'mvn package -DskipTests'
+                                                echo "✅ ${service.name} empaqueté"
+                                                
+                                                // Vérifier si le JAR a été créé
+                                                if (findFiles(glob: 'target/*.jar').size() > 0) {
+                                                    echo "✅ Fichier JAR créé pour ${service.name}"
+                                                }
+                                            } catch (Exception e) {
+                                                echo "❌ Échec de l'empaquetage de ${service.name}"
+                                            }
                                         }
                                     }
                                 }
@@ -204,7 +204,6 @@ pipeline {
         stage('Build Docker Images') {
             when {
                 expression { 
-                    // Vérifie si Docker est disponible
                     try {
                         bat('docker --version', returnStatus: true) == 0
                     } catch (Exception e) {
@@ -214,38 +213,46 @@ pipeline {
             }
             steps {
                 script {
-                    echo "🐳 CONSTRUCTION DES IMAGES DOCKER"
-                    echo "=================================="
-                    
-                    def services = [
-                        [name: "annonceService", path: "backend/annonceService/annonceService"],
-                        [name: "chatService", path: "backend/chatService"],
-                        [name: "discoveryService", path: "backend/discoveryService"],
-                        [name: "donationService", path: "backend/donationService"],
-                        [name: "gatewayService", path: "backend/gatewayService"],
-                        [name: "hospitalService", path: "backend/hospitalService"],
-                        [name: "locationService", path: "backend/locationService"],
-                        [name: "reviewService", path: "backend/reviewService"],
-                        [name: "userService", path: "backend/userService"]
-                    ]
-                    
-                    services.each { service ->
-                        if (fileExists(service.path)) {
-                            dir(service.path) {
-                                stage("Docker Build ${service.name}") {
-                                    if (fileExists('Dockerfile')) {
-                                        try {
-                                            // Nom de l'image en minuscules
-                                            def imageName = "${service.name.toLowerCase()}"
-                                            echo "🐳 Construction de l'image: ${DOCKER_REGISTRY}/${imageName}:latest"
-                                            
-                                            bat "docker build -t ${DOCKER_REGISTRY}/${imageName}:latest ."
-                                            echo "✅ Image Docker construite pour ${service.name}"
-                                        } catch (Exception e) {
-                                            echo "❌ Échec de la construction Docker pour ${service.name}"
+                    dir('backend') {
+                        echo "🐳 CONSTRUCTION DES IMAGES DOCKER"
+                        echo "=================================="
+                        
+                        def services = [
+                            [name: "annonceService", subdir: "annonceService"],
+                            [name: "chatService", subdir: ""],
+                            [name: "discoveryService", subdir: ""],
+                            [name: "donationService", subdir: ""],
+                            [name: "gatewayService", subdir: ""],
+                            [name: "hospitalService", subdir: ""],
+                            [name: "locationService", subdir: ""],
+                            [name: "reviewService", subdir: ""],
+                            [name: "userService", subdir: ""]
+                        ]
+                        
+                        services.each { service ->
+                            def servicePath = service.name
+                            if (service.subdir) {
+                                servicePath = "${service.name}/${service.subdir}"
+                            }
+                            
+                            if (fileExists(servicePath)) {
+                                dir(servicePath) {
+                                    stage("Docker Build ${service.name}") {
+                                        if (fileExists('Dockerfile')) {
+                                            try {
+                                                def imageName = "${service.name.toLowerCase()}"
+                                                echo "🐳 Construction de l'image: ${DOCKER_REGISTRY}/${imageName}:latest"
+                                                
+                                                bat "docker build -t ${DOCKER_REGISTRY}/${imageName}:latest ."
+                                                echo "✅ Image Docker construite pour ${service.name}"
+                                            } catch (Exception e) {
+                                                echo "❌ Échec de la construction Docker pour ${service.name}"
+                                                echo "Assurez-vous que Docker est en cours d'exécution"
+                                            }
+                                        } else {
+                                            echo "⚠️ Dockerfile non trouvé pour ${service.name}"
+                                            bat 'dir Dockerfile* 2>nul || echo "Pas de Dockerfile"'
                                         }
-                                    } else {
-                                        echo "⚠️ Dockerfile non trouvé pour ${service.name}"
                                     }
                                 }
                             }
@@ -258,7 +265,6 @@ pipeline {
         stage('Push Docker Images') {
             when {
                 expression { 
-                    // Vérifie si Docker est disponible ET si les credentials existent
                     try {
                         bat('docker --version', returnStatus: true) == 0
                     } catch (Exception e) {
@@ -271,35 +277,42 @@ pipeline {
                     echo "⬆️ PUSH DES IMAGES DOCKER"
                     echo "========================="
                     
-                    def services = [
-                        [name: "annonceService", path: "backend/annonceService/annonceService"],
-                        [name: "chatService", path: "backend/chatService"],
-                        [name: "discoveryService", path: "backend/discoveryService"],
-                        [name: "donationService", path: "backend/donationService"],
-                        [name: "gatewayService", path: "backend/gatewayService"],
-                        [name: "hospitalService", path: "backend/hospitalService"],
-                        [name: "locationService", path: "backend/locationService"],
-                        [name: "reviewService", path: "backend/reviewService"],
-                        [name: "userService", path: "backend/userService"]
-                    ]
-                    
                     withDockerRegistry(
                         credentialsId: 'dockerhub-creds',
                         url: ''
                     ) {
-                        services.each { service ->
-                            if (fileExists(service.path)) {
-                                dir(service.path) {
-                                    stage("Docker Push ${service.name}") {
-                                        if (fileExists('Dockerfile')) {
-                                            try {
-                                                def imageName = "${service.name.toLowerCase()}"
-                                                echo "⬆️ Pushing: ${DOCKER_REGISTRY}/${imageName}:latest"
-                                                
-                                                bat "docker push ${DOCKER_REGISTRY}/${imageName}:latest"
-                                                echo "✅ Image Docker poussée pour ${service.name}"
-                                            } catch (Exception e) {
-                                                echo "❌ Échec du push Docker pour ${service.name}"
+                        dir('backend') {
+                            def services = [
+                                [name: "annonceService", subdir: "annonceService"],
+                                [name: "chatService", subdir: ""],
+                                [name: "discoveryService", subdir: ""],
+                                [name: "donationService", subdir: ""],
+                                [name: "gatewayService", subdir: ""],
+                                [name: "hospitalService", subdir: ""],
+                                [name: "locationService", subdir: ""],
+                                [name: "reviewService", subdir: ""],
+                                [name: "userService", subdir: ""]
+                            ]
+                            
+                            services.each { service ->
+                                def servicePath = service.name
+                                if (service.subdir) {
+                                    servicePath = "${service.name}/${service.subdir}"
+                                }
+                                
+                                if (fileExists(servicePath)) {
+                                    dir(servicePath) {
+                                        stage("Docker Push ${service.name}") {
+                                            if (fileExists('Dockerfile')) {
+                                                try {
+                                                    def imageName = "${service.name.toLowerCase()}"
+                                                    echo "⬆️ Pushing: ${DOCKER_REGISTRY}/${imageName}:latest"
+                                                    
+                                                    bat "docker push ${DOCKER_REGISTRY}/${imageName}:latest"
+                                                    echo "✅ Image Docker poussée pour ${service.name}"
+                                                } catch (Exception e) {
+                                                    echo "❌ Échec du push Docker pour ${service.name}"
+                                                }
                                             }
                                         }
                                     }
@@ -314,7 +327,6 @@ pipeline {
         stage('Deploy to Kubernetes') {
             when {
                 expression { 
-                    // Vérifie si kubectl est disponible ET si le dossier k8s existe
                     try {
                         bat('kubectl version --client', returnStatus: true) == 0 && fileExists('k8s')
                     } catch (Exception e) {
@@ -327,6 +339,7 @@ pipeline {
                     echo "☸️ DÉPLOIEMENT KUBERNETES"
                     echo "========================="
                     
+                    // Remonter à la racine pour trouver le dossier k8s
                     def k8sServices = [
                         "annonce-donation-services",
                         "annonce-service",
@@ -364,24 +377,23 @@ pipeline {
     post {
         success { 
             echo "🎉 Pipeline terminé avec succès" 
-            echo "✅ Tous les services ont été construits et déployés"
+            echo "✅ Tous les services ont été traités"
         }
         failure { 
             echo "❌ Pipeline échoué" 
             script {
                 echo "🔧 Dépannage:"
-                echo "1. Vérifiez que tous les services ont un pom.xml"
-                echo "2. Vérifiez que Maven est correctement configuré"
-                echo "3. Vérifiez que Docker est installé et en cours d'exécution"
-                echo "4. Vérifiez que kubectl est configuré"
+                echo "1. Vérifiez la structure de votre dépôt"
+                echo "2. Vérifiez que tous les services ont un pom.xml"
+                echo "3. Vérifiez les logs Maven pour les erreurs de dépendances"
             }
         }
         always {
             echo "📊 Résumé:"
-            echo "- Branche: ${SOURCE_BRANCH}"
             echo "- Dépôt: ${SOURCE_REPO}"
+            echo "- Branche: ${SOURCE_BRANCH}"
             echo "- Statut: ${currentBuild.currentResult}"
-            echo "- Durée: ${currentBuild.durationString}"
+            echo "- URL du build: ${env.BUILD_URL}"
         }
     }
 }
