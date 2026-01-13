@@ -14,13 +14,6 @@ pipeline {
 
 	stages {
 
-		stage('Checkout') {
-			steps {
-				git branch: 'main',
-				url: 'https://github.com/AnasSaibari/blood-donation.git'
-			}
-		}
-
 		stage('Build, Test & SonarQube') {
 			steps {
 				script {
