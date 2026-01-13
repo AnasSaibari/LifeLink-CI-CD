@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: annonce-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: annonce-service
+  template:
+    metadata:
+      labels:
+        app: annonce-service
+    spec:
+      containers:
+        - name: annonce-service
+          image: anasdevops/annonceservice:latest
+          ports:
+            - containerPort: 9094
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:mysql://mysql-db:3306/annonce_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+            - name: SPRING_DATASOURCE_USERNAME
+              value: root
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: ""

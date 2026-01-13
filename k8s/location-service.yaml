@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: location-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: location-service
+  template:
+    metadata:
+      labels:
+        app: location-service
+    spec:
+      containers:
+        - name: location-service
+          image: anasdevops/locationservice:latest
+          ports:
+            - containerPort: 9092
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:mysql://mysql-db:3306/location_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+            - name: SPRING_DATASOURCE_USERNAME
+              value: root
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: ""
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: location-service
+spec:
+  type: ClusterIP
+  selector:
+    app: location-service
+  ports:
+    - port: 9092
+      targetPort: 9092

@@ -1,0 +1,106 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.app:reviewService >------------------------
+[INFO] Building reviewService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ reviewService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ reviewService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ reviewService ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 8 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ reviewService ---
+[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ reviewService ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ reviewService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.0:run (default-cli) @ reviewService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.0)
+
+2026-01-12T21:44:59.190+01:00  INFO 59123 --- [reviewService] [  restartedMain] c.a.d.ReviewServiceApplication           : Starting ReviewServiceApplication using Java 17.0.17 with PID 59123 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/reviewService)
+2026-01-12T21:44:59.192+01:00  INFO 59123 --- [reviewService] [  restartedMain] c.a.d.ReviewServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T21:44:59.250+01:00  INFO 59123 --- [reviewService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-12T21:44:59.250+01:00  INFO 59123 --- [reviewService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-12T21:44:59.837+01:00  INFO 59123 --- [reviewService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12T21:44:59.934+01:00  INFO 59123 --- [reviewService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interface.
+2026-01-12T21:45:00.097+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1cfaf71e-a7dd-35d5-9747-2c8fdd0154c7
+2026-01-12T21:45:00.410+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
+2026-01-12T21:45:00.419+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-12T21:45:00.419+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-12T21:45:00.447+01:00  INFO 59123 --- [reviewService] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1196 ms
+2026-01-12T21:45:00.552+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-12T21:45:00.582+01:00  INFO 59123 --- [reviewService] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-12T21:45:00.851+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-12T21:45:00.873+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-12T21:45:01.084+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28cb7798
+2026-01-12T21:45:01.085+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-12T21:45:01.123+01:00  WARN 59123 --- [reviewService] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-12T21:45:01.133+01:00  INFO 59123 --- [reviewService] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/review_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: review_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-12T21:45:01.674+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-12T21:45:01.713+01:00  INFO 59123 --- [reviewService] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-12T21:45:01.761+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-12T21:45:02.167+01:00  WARN 59123 --- [reviewService] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12T21:45:02.502+01:00  INFO 59123 --- [reviewService] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-01-12T21:45:02.589+01:00  WARN 59123 --- [reviewService] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-12T21:45:02.611+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-12T21:45:02.623+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-12T21:45:02.625+01:00  INFO 59123 --- [reviewService] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-12T21:45:02.629+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-12T21:45:02.629+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-12T21:45:02.629+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-12T21:45:02.629+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-12T21:45:02.629+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-12T21:45:02.629+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-12T21:45:02.629+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-12T21:45:02.743+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-12T21:45:02.744+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-12T21:45:02.744+01:00  INFO 59123 --- [reviewService] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-12T21:45:02.745+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1768250702745 with initial instances count: 0
+2026-01-12T21:45:02.747+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REVIEWSERVICE with eureka with status UP
+2026-01-12T21:45:02.748+01:00  INFO 59123 --- [reviewService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1768250702748, current=UP, previous=STARTING]
+2026-01-12T21:45:02.749+01:00  INFO 59123 --- [reviewService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEWSERVICE/192.168.1.3:reviewService:9095: registering service...
+2026-01-12T21:45:02.759+01:00  INFO 59123 --- [reviewService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
+2026-01-12T21:45:02.760+01:00  INFO 59123 --- [reviewService] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
+2026-01-12T21:45:02.768+01:00  INFO 59123 --- [reviewService] [  restartedMain] c.a.d.ReviewServiceApplication           : Started ReviewServiceApplication in 3.988 seconds (process running for 4.62)
+2026-01-12T21:45:02.771+01:00  INFO 59123 --- [reviewService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REVIEWSERVICE/192.168.1.3:reviewService:9095 - registration status: 204
+2026-01-12T21:45:32.749+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-12T21:45:32.751+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-12T21:45:32.752+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-12T21:45:32.752+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-12T21:45:32.752+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-12T21:45:32.752+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-01-12T21:45:32.752+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-12T21:45:32.773+01:00  INFO 59123 --- [reviewService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-12T21:50:02.634+01:00  INFO 59123 --- [reviewService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-12T21:55:02.642+01:00  INFO 59123 --- [reviewService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

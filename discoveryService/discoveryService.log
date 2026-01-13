@@ -1,0 +1,131 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:discoveryService >--------------------
+[INFO] Building discoveryService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ discoveryService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ discoveryService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ discoveryService ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ discoveryService ---
+[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/discoveryService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ discoveryService ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ discoveryService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ discoveryService ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-01-12T21:44:36.252+01:00  INFO 58109 --- [           main] c.e.d.DiscoveryServiceApplication        : Starting DiscoveryServiceApplication using Java 17.0.17 with PID 58109 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/discoveryService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/discoveryService)
+2026-01-12T21:44:36.254+01:00  INFO 58109 --- [           main] c.e.d.DiscoveryServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T21:44:36.693+01:00  INFO 58109 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bc4569a6-a5d7-3231-a785-5d486ea2943d
+2026-01-12T21:44:36.720+01:00  WARN 58109 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-12T21:44:36.721+01:00  WARN 58109 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-01-12T21:44:36.824+01:00  INFO 58109 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-01-12T21:44:36.831+01:00  INFO 58109 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-12T21:44:36.831+01:00  INFO 58109 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-01-12T21:44:36.863+01:00  INFO 58109 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-12T21:44:36.863+01:00  INFO 58109 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 590 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-01-12T21:44:37.223+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-12T21:44:37.223+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-01-12T21:44:37.294+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-12T21:44:37.294+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-12T21:44:37.643+01:00  WARN 58109 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-12T21:44:37.651+01:00  INFO 58109 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-12T21:44:37.659+01:00  INFO 58109 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-12T21:44:37.659+01:00  INFO 58109 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-01-12T21:44:37.660+01:00  INFO 58109 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1768250677659 with initial instances count: 0
+2026-01-12T21:44:37.675+01:00  INFO 58109 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-01-12T21:44:37.675+01:00  INFO 58109 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-01-12T21:44:37.748+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-12T21:44:37.748+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-01-12T21:44:37.748+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-12T21:44:37.748+01:00  INFO 58109 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-12T21:44:37.767+01:00  INFO 58109 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-01-12T21:44:37.771+01:00  INFO 58109 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-01-12T21:44:37.771+01:00  INFO 58109 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-01-12T21:44:37.775+01:00  INFO 58109 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-01-12T21:44:37.795+01:00  INFO 58109 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2026-01-12T21:44:37.800+01:00  INFO 58109 --- [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-01-12T21:44:37.800+01:00  INFO 58109 --- [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-01-12T21:44:37.800+01:00  INFO 58109 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-01-12T21:44:37.800+01:00  INFO 58109 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-01-12T21:44:37.800+01:00  INFO 58109 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-01-12T21:44:37.801+01:00  INFO 58109 --- [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-01-12T21:44:37.804+01:00  INFO 58109 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2026-01-12T21:44:37.804+01:00  INFO 58109 --- [           main] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-01-12T21:44:37.804+01:00  INFO 58109 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-01-12T21:44:37.805+01:00  INFO 58109 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-01-12T21:44:37.805+01:00  INFO 58109 --- [           main] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-01-12T21:44:37.805+01:00  WARN 58109 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-01-12T21:44:37.805+01:00  INFO 58109 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-01-12T21:44:37.805+01:00  INFO 58109 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-01-12T21:44:37.805+01:00 ERROR 58109 --- [t-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.9.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.9.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.9.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.9.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.3.jar:2.0.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-01-12T21:44:37.807+01:00  INFO 58109 --- [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-01-12T21:44:37.807+01:00  INFO 58109 --- [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-01-12T21:44:37.820+01:00  INFO 58109 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12T21:44:37.828+01:00 ERROR 58109 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8761 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8761 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.220 s
+[INFO] Finished at: 2026-01-12T21:44:37+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.5:run (default-cli) on project discoveryService: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

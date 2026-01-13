@@ -1,0 +1,56 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:3000"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      routes:
+        - id: user-service
+          uri: http://localhost:9091
+          predicates:
+            - Path=/api/users/**
+        - id: auth-service
+          uri: http://localhost:9091
+          predicates:
+            - Path=/api/auth/**
+        - id: verification-service
+          uri: http://localhost:9091
+          predicates:
+            - Path=/api/email-verification/**
+        - id: annonce-service
+          uri: http://localhost:9094
+          predicates:
+            - Path=/api/annonces/**
+        - id: location-service
+          uri: http://localhost:9092
+          predicates:
+            - Path=/location/**
+        - id: hospital-service
+          uri: http://localhost:9093
+          predicates:
+            - Path=/hospital/**
+        - id: review-service
+          uri: http://localhost:9095
+          predicates:
+            - Path=/api/reviews/**
+        - id: donation-service
+          uri: http://localhost:9096
+          predicates:
+            - Path=/api/donations/**
+        - id: chat-service-conversations
+          uri: http://localhost:9097
+          predicates:
+            - Path=/conversations/**
+        - id: chat-service-messages
+          uri: http://localhost:9097
+          predicates:
+            - Path=/messages/**

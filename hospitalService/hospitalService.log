@@ -1,0 +1,585 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.app:hospitalService >-----------------------
+[INFO] Building hospitalService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ hospitalService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hospitalService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ hospitalService ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 8 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ hospitalService ---
+[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/hospitalService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ hospitalService ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ hospitalService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.0:run (default-cli) @ hospitalService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.0)
+
+2026-01-12T21:44:57.943+01:00  INFO 59118 --- [hospitalService] [  restartedMain] c.a.h.HospitalServiceApplication         : Starting HospitalServiceApplication using Java 17.0.17 with PID 59118 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/hospitalService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/hospitalService)
+2026-01-12T21:44:57.947+01:00  INFO 59118 --- [hospitalService] [  restartedMain] c.a.h.HospitalServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T21:44:58.052+01:00  INFO 59118 --- [hospitalService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-12T21:44:58.052+01:00  INFO 59118 --- [hospitalService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-12T21:44:58.975+01:00  INFO 59118 --- [hospitalService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12T21:44:59.094+01:00  INFO 59118 --- [hospitalService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
+2026-01-12T21:44:59.336+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=879bd3f6-c5f0-3705-9460-5e6de3b3a15a
+2026-01-12T21:44:59.666+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9093 (http)
+2026-01-12T21:44:59.673+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-12T21:44:59.673+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-12T21:44:59.705+01:00  INFO 59118 --- [hospitalService] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1652 ms
+2026-01-12T21:44:59.818+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-12T21:44:59.859+01:00  INFO 59118 --- [hospitalService] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-12T21:45:00.150+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-12T21:45:00.175+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-12T21:45:00.416+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@242186ba
+2026-01-12T21:45:00.418+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-12T21:45:00.471+01:00  WARN 59118 --- [hospitalService] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-12T21:45:00.491+01:00  INFO 59118 --- [hospitalService] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/hospital_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: hospital_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-12T21:45:01.078+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-12T21:45:01.141+01:00  INFO 59118 --- [hospitalService] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-12T21:45:01.208+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-12T21:45:01.289+01:00  WARN 59118 --- [hospitalService] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12T21:45:01.701+01:00  INFO 59118 --- [hospitalService] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-01-12T21:45:01.816+01:00  WARN 59118 --- [hospitalService] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-12T21:45:01.841+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-12T21:45:01.859+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-12T21:45:01.861+01:00  INFO 59118 --- [hospitalService] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-12T21:45:01.866+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-12T21:45:01.866+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-12T21:45:01.866+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-12T21:45:01.866+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-12T21:45:01.866+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-12T21:45:01.866+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-12T21:45:01.866+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-12T21:45:02.204+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-12T21:45:02.205+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-12T21:45:02.207+01:00  INFO 59118 --- [hospitalService] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-12T21:45:02.212+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1768250702211 with initial instances count: 0
+2026-01-12T21:45:02.214+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOSPITALSERVICE with eureka with status UP
+2026-01-12T21:45:02.215+01:00  INFO 59118 --- [hospitalService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1768250702215, current=UP, previous=STARTING]
+2026-01-12T21:45:02.216+01:00  INFO 59118 --- [hospitalService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOSPITALSERVICE/192.168.1.3:hospitalService:9093: registering service...
+2026-01-12T21:45:02.229+01:00  INFO 59118 --- [hospitalService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9093 (http) with context path '/'
+2026-01-12T21:45:02.229+01:00  INFO 59118 --- [hospitalService] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2026-01-12T21:45:02.239+01:00  INFO 59118 --- [hospitalService] [  restartedMain] c.a.h.HospitalServiceApplication         : Started HospitalServiceApplication in 4.846 seconds (process running for 5.644)
+2026-01-12T21:45:02.340+01:00  INFO 59118 --- [hospitalService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOSPITALSERVICE/192.168.1.3:hospitalService:9093 - registration status: 204
+2026-01-12T21:45:32.212+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-12T21:45:32.217+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-12T21:45:32.217+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-12T21:45:32.217+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-12T21:45:32.217+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-12T21:45:32.217+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-01-12T21:45:32.218+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-12T21:45:32.243+01:00  INFO 59118 --- [hospitalService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-12T21:47:01.442+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-12T21:47:01.443+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-12T21:47:01.445+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-12T21:47:01.491+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital - Récupération de tous les hôpitaux
+2026-01-12T21:47:01.491+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de tous les hôpitaux
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0
+2026-01-12T21:47:01.608+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération réussie de 0 hôpitaux
+2026-01-12T21:49:04.263+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital - Récupération de tous les hôpitaux
+2026-01-12T21:49:04.264+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de tous les hôpitaux
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0
+2026-01-12T21:49:04.315+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération réussie de 3 hôpitaux
+2026-01-12T21:49:46.662+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:49:46.662+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:49:46.675+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:50:01.872+01:00  INFO 59118 --- [hospitalService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-12T21:51:41.476+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:51:41.477+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:51:41.486+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:51:52.993+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:51:52.993+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:51:52.998+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:52:20.837+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:52:20.837+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:52:20.853+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:52:23.012+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:52:23.012+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:52:23.017+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:52:23.113+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:52:23.113+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:52:23.118+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:52:23.133+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:52:23.133+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:52:23.137+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:52:28.190+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:52:28.191+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:52:28.200+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:52:39.129+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:52:39.129+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:52:39.137+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:15.706+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:15.706+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:15.718+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:41.919+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:41.920+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:41.926+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:41.998+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:41.999+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:42.004+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:42.021+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:42.021+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:42.027+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:42.046+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:42.046+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:42.051+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:42.064+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:42.064+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:42.071+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:42.088+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:42.088+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:42.094+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:42.106+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:42.106+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:42.111+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:43.193+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:43.193+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:43.198+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:43.252+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:43.252+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:43.259+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:43.272+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:43.272+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:43.279+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:43.296+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:43.296+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:43.303+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:43.313+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:43.313+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:43.317+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:43.331+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:43.332+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:43.336+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:43.348+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:54:43.348+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:54:43.353+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:54:52.825+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital - Récupération de tous les hôpitaux
+2026-01-12T21:54:52.825+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de tous les hôpitaux
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0
+2026-01-12T21:54:52.838+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération réussie de 3 hôpitaux
+2026-01-12T21:55:01.879+01:00  INFO 59118 --- [hospitalService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-12T21:55:22.330+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:22.331+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:22.335+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:22.345+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:22.345+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:22.349+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:22.366+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:22.366+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:22.370+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:22.382+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:22.382+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:22.385+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:22.400+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:22.400+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:22.405+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:22.414+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:22.414+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:22.421+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:27.536+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:27.536+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:27.543+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:27.553+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:27.553+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:27.559+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:27.576+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:27.576+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:27.580+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:27.591+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:27.591+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:27.595+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:27.611+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:27.611+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:27.616+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:27.624+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:27.624+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:27.627+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:30.426+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:30.426+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:30.430+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:30.448+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:30.448+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:30.454+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:32.646+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:32.646+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:32.649+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:33.168+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:33.168+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:33.173+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:36.021+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:36.021+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:36.025+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:40.321+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:40.321+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:40.331+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:40.345+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:40.346+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:40.352+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:40.367+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:40.367+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:40.372+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:40.383+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:40.383+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:40.388+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:40.401+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:40.401+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:40.407+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:40.416+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:40.416+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:40.421+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:48.294+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:48.294+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:48.301+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:48.347+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:48.347+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:48.354+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:48.364+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:48.365+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:48.370+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:48.387+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:48.387+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:48.391+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:48.403+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:48.404+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:48.409+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:48.424+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:48.424+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:48.427+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:48.440+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:48.440+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:48.443+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:55:54.804+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:55:54.804+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:55:54.809+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:00.102+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:00.102+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:00.106+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:00.184+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:00.184+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:00.188+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:02.038+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:02.039+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:02.043+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:02.116+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:02.117+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:02.121+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:04.696+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:04.697+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:04.707+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:04.725+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:04.725+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:04.731+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:04.748+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:04.748+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:04.754+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:04.764+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:04.764+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:04.770+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:04.788+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:04.788+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:04.794+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:04.803+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:04.803+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:04.809+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:06.141+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:06.141+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:06.148+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:06.158+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:06.158+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:06.165+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:06.186+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:06.186+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:06.191+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:06.200+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:06.200+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:06.205+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:06.218+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:06.218+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:06.222+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:06.231+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:06.231+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:06.237+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:09.419+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:09.419+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:09.424+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:09.472+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:09.472+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:09.475+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:09.489+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:09.489+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:09.493+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:09.508+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:09.508+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:09.511+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:09.519+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:09.519+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:09.522+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:09.535+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:09.535+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:09.539+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:09.549+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:09.549+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:09.552+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:14.457+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:14.457+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:14.464+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:14.471+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:14.471+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:14.477+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:14.492+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:14.492+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:14.497+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:14.506+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:14.506+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:14.513+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:14.527+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:14.527+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:14.530+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:14.541+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:14.541+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:14.549+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:16.618+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:16.618+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:16.627+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:16.638+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:16.638+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:16.643+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:16.660+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:16.660+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:16.666+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:16.676+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:16.676+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:16.680+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:16.695+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:16.695+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:16.700+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:16.710+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:16.710+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:16.716+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:32.027+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:32.027+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:32.032+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:32.041+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:32.041+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:32.045+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:34.183+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:34.183+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:34.192+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:34.264+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:34.264+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:34.270+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:38.512+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:38.512+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:38.522+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:56:38.592+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:56:38.592+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:56:38.599+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:05.157+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:05.157+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:05.170+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:05.189+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:05.189+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:05.195+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:06.422+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:06.422+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:06.429+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:06.439+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:06.440+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:06.443+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:08.317+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:08.317+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:08.322+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:08.393+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:08.393+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:08.398+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:10.317+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:10.317+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:10.321+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:10.331+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:10.331+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:10.334+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:10.411+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:10.412+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:10.415+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:10.424+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:10.424+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:10.428+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:12.206+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:12.206+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:12.211+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-8] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:12.220+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:12.220+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:12.224+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-9] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:14.402+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:14.402+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:14.407+01:00  INFO 59118 --- [hospitalService] [io-9093-exec-10] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:14.414+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:14.414+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:14.418+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-1] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:19.312+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:19.312+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:19.317+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-2] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:19.328+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:19.328+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:19.332+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-3] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:20.820+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:20.820+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:20.828+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-4] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:20.845+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:20.846+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:20.854+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-5] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:20.927+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:20.927+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:20.935+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-6] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1
+2026-01-12T21:58:20.952+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Controller.HospitalController      : Requête GET /hospital/1 - Récupération de l'hôpital
+2026-01-12T21:58:20.952+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Récupération de l'hôpital avec l'ID: 1
+Hibernate: select h1_0.id,h1_0.hospital_nom,h1_0.hospital_num,h1_0.latitude,h1_0.longitude from hospital h1_0 where h1_0.id=?
+2026-01-12T21:58:20.959+01:00  INFO 59118 --- [hospitalService] [nio-9093-exec-7] c.a.h.Service.HospitalService            : Hôpital récupéré avec succès - ID: 1, Nom: hospital1

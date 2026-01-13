@@ -1,0 +1,584 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.app:userService >-------------------------
+[INFO] Building userService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.0:run (default-cli) > test-compile @ userService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ userService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ userService ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 27 source files with javac [debug parameters release 17] to target/classes
+[WARNING] /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/userService/src/main/java/com/app/userService/Mapper/UserMapper.java:[13,13] Unmapped target properties: "verified, location, hospital".
+[WARNING] /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/userService/src/main/java/com/app/userService/Mapper/UserMapper.java:[18,10] Unmapped target property: "password".
+[WARNING] /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/userService/src/main/java/com/app/userService/Mapper/UserMapper.java:[22,10] Unmapped target property: "password".
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ userService ---
+[INFO] skip non existing resourceDirectory /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/userService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ userService ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.0:run (default-cli) < test-compile @ userService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.0:run (default-cli) @ userService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.0)
+
+2026-01-12T21:44:58.515+01:00  INFO 59119 --- [userService] [  restartedMain] c.a.userService.UserServiceApplication   : Starting UserServiceApplication using Java 17.0.17 with PID 59119 (/Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/userService/target/classes started by abderrahimdefaoui in /Users/abderrahimdefaoui/Desktop/blood-donaiton-main/backend/userService)
+2026-01-12T21:44:58.527+01:00  INFO 59119 --- [userService] [  restartedMain] c.a.userService.UserServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T21:44:58.599+01:00  INFO 59119 --- [userService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-12T21:44:58.599+01:00  INFO 59119 --- [userService] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-12T21:44:59.453+01:00  INFO 59119 --- [userService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12T21:44:59.562+01:00  INFO 59119 --- [userService] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces.
+2026-01-12T21:44:59.807+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2fbfc90-68e0-3489-b5a7-880ff4ab1656
+2026-01-12T21:45:00.110+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9091 (http)
+2026-01-12T21:45:00.119+01:00  INFO 59119 --- [userService] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-12T21:45:00.119+01:00  INFO 59119 --- [userService] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2026-01-12T21:45:00.145+01:00  INFO 59119 --- [userService] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1546 ms
+2026-01-12T21:45:00.227+01:00  INFO 59119 --- [userService] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-12T21:45:00.258+01:00  INFO 59119 --- [userService] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-01-12T21:45:00.534+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-12T21:45:00.557+01:00  INFO 59119 --- [userService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-12T21:45:00.782+01:00  INFO 59119 --- [userService] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f9f2ae4
+2026-01-12T21:45:00.783+01:00  INFO 59119 --- [userService] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-12T21:45:00.830+01:00  WARN 59119 --- [userService] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-12T21:45:00.841+01:00  INFO 59119 --- [userService] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/user_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: user_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-12T21:45:01.426+01:00  INFO 59119 --- [userService] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-12T21:45:01.472+01:00  INFO 59119 --- [userService] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-12T21:45:01.546+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-12T21:45:01.785+01:00  WARN 59119 --- [userService] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12T21:45:02.059+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'reviewService' URL not provided. Will try picking an instance via load-balancing.
+2026-01-12T21:45:02.112+01:00  INFO 59119 --- [userService] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-01-12T21:45:02.428+01:00  INFO 59119 --- [userService] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-01-12T21:45:02.447+01:00  WARN 59119 --- [userService] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-12T21:45:02.462+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-12T21:45:02.474+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-12T21:45:02.475+01:00  INFO 59119 --- [userService] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-12T21:45:02.479+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-12T21:45:02.479+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-12T21:45:02.479+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-12T21:45:02.479+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-12T21:45:02.479+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-12T21:45:02.480+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-12T21:45:02.480+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-12T21:45:02.588+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-12T21:45:02.589+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-12T21:45:02.590+01:00  INFO 59119 --- [userService] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-12T21:45:02.591+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1768250702590 with initial instances count: 0
+2026-01-12T21:45:02.593+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERSERVICE with eureka with status UP
+2026-01-12T21:45:02.593+01:00  INFO 59119 --- [userService] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1768250702593, current=UP, previous=STARTING]
+2026-01-12T21:45:02.593+01:00  INFO 59119 --- [userService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/192.168.1.3:userService:9091: registering service...
+2026-01-12T21:45:02.602+01:00  INFO 59119 --- [userService] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9091 (http) with context path '/'
+2026-01-12T21:45:02.603+01:00  INFO 59119 --- [userService] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9091
+2026-01-12T21:45:02.611+01:00  INFO 59119 --- [userService] [  restartedMain] c.a.userService.UserServiceApplication   : Started UserServiceApplication in 4.584 seconds (process running for 5.312)
+2026-01-12T21:45:02.618+01:00  INFO 59119 --- [userService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERSERVICE/192.168.1.3:userService:9091 - registration status: 204
+2026-01-12T21:45:30.828+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-12T21:45:30.829+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-12T21:45:30.830+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-12T21:45:30.855+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users - Récupération de tous les utilisateurs
+2026-01-12T21:45:30.855+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de tous les utilisateurs
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0
+2026-01-12T21:45:30.962+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de 0 utilisateurs
+2026-01-12T21:45:32.595+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-12T21:45:32.596+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-12T21:45:32.596+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-12T21:45:32.596+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-12T21:45:32.596+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-12T21:45:32.596+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-01-12T21:45:32.596+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-12T21:45:32.620+01:00  INFO 59119 --- [userService] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-12T21:45:34.079+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users - Récupération de tous les utilisateurs
+2026-01-12T21:45:34.079+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de tous les utilisateurs
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0
+2026-01-12T21:45:34.092+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de 0 utilisateurs
+2026-01-12T21:45:34.932+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users - Récupération de tous les utilisateurs
+2026-01-12T21:45:34.932+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de tous les utilisateurs
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0
+2026-01-12T21:45:34.950+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de 0 utilisateurs
+2026-01-12T21:46:33.760+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/5 - Récupération de l'utilisateur
+2026-01-12T21:46:33.761+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 5
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:46:33.784+01:00  WARN 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Utilisateur non trouvé avec l'ID: 5
+2026-01-12T21:46:33.787+01:00  WARN 59119 --- [userService] [nio-9091-exec-4] c.a.u.Exception.GlobalExceptionHandler   : Ressource non trouvée: User not found with id: 5
+2026-01-12T21:46:33.809+01:00  WARN 59119 --- [userService] [nio-9091-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.persistence.EntityNotFoundException: User not found with id: 5]
+2026-01-12T21:46:41.013+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/5 - Récupération de l'utilisateur
+2026-01-12T21:46:41.013+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 5
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:46:41.021+01:00  WARN 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Utilisateur non trouvé avec l'ID: 5
+2026-01-12T21:46:41.022+01:00  WARN 59119 --- [userService] [nio-9091-exec-5] c.a.u.Exception.GlobalExceptionHandler   : Ressource non trouvée: User not found with id: 5
+2026-01-12T21:46:41.023+01:00  WARN 59119 --- [userService] [nio-9091-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.persistence.EntityNotFoundException: User not found with id: 5]
+2026-01-12T21:46:42.197+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/5 - Récupération de l'utilisateur
+2026-01-12T21:46:42.197+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 5
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:46:42.206+01:00  WARN 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Utilisateur non trouvé avec l'ID: 5
+2026-01-12T21:46:42.207+01:00  WARN 59119 --- [userService] [nio-9091-exec-7] c.a.u.Exception.GlobalExceptionHandler   : Ressource non trouvée: User not found with id: 5
+2026-01-12T21:46:42.207+01:00  WARN 59119 --- [userService] [nio-9091-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.persistence.EntityNotFoundException: User not found with id: 5]
+2026-01-12T21:46:47.083+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/5 - Récupération de l'utilisateur
+2026-01-12T21:46:47.084+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 5
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:46:47.093+01:00  WARN 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Utilisateur non trouvé avec l'ID: 5
+2026-01-12T21:46:47.093+01:00  WARN 59119 --- [userService] [nio-9091-exec-6] c.a.u.Exception.GlobalExceptionHandler   : Ressource non trouvée: User not found with id: 5
+2026-01-12T21:46:47.094+01:00  WARN 59119 --- [userService] [nio-9091-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.persistence.EntityNotFoundException: User not found with id: 5]
+2026-01-12T21:46:58.446+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.AuthController          : Requête POST /api/auth/login - Tentative de connexion pour: user@gmail.com
+2026-01-12T21:46:58.446+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.AuthService    : Tentative de connexion pour: user@gmail.com
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.username=?
+2026-01-12T21:46:58.576+01:00  WARN 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.AuthService    : Utilisateur non trouvé: user@gmail.com
+2026-01-12T21:46:58.577+01:00  WARN 59119 --- [userService] [nio-9091-exec-8] c.a.u.Exception.GlobalExceptionHandler   : Erreur de requête: Utilisateur non trouvé avec l'email ou username: user@gmail.com
+2026-01-12T21:46:58.577+01:00  WARN 59119 --- [userService] [nio-9091-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Utilisateur non trouvé avec l'email ou username: user@gmail.com]
+2026-01-12T21:49:36.976+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête POST /api/users - Création d'un nouvel utilisateur
+2026-01-12T21:49:36.978+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Création d'un nouvel utilisateur: hospital@gmail.com
+Hibernate: select u1_0.id from user u1_0 where u1_0.email=? limit ?
+2026-01-12T21:49:37.098+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Mot de passe encodé pour l'utilisateur: hospital@gmail.com
+Hibernate: insert into user (address,blood_type,email,hospital_id,password,phone_number,role,score,sex,username,ville_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2026-01-12T21:49:37.139+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Utilisateur créé avec succès - ID: 1, Email: hospital@gmail.com
+2026-01-12T21:49:46.170+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.AuthController          : Requête POST /api/auth/login - Tentative de connexion pour: hospital@gmail.com
+2026-01-12T21:49:46.171+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.AuthService    : Tentative de connexion pour: hospital@gmail.com
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+2026-01-12T21:49:46.309+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.AuthService    : Utilisateur connecté: hospital@gmail.com
+2026-01-12T21:49:46.309+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.AuthController          : Connexion réussie pour: hospital@gmail.com
+2026-01-12T21:49:46.609+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:49:46.609+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:49:46.679+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:50:02.485+01:00  INFO 59119 --- [userService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+2026-01-12T21:51:41.453+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:51:41.453+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:51:41.487+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:51:52.972+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:51:52.972+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:51:52.999+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+2026-01-12T21:52:20.794+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:52:20.795+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:52:20.855+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:52:22.983+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:52:22.983+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:52:23.019+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:52:23.094+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:52:23.094+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:52:23.119+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+2026-01-12T21:52:28.169+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:52:28.169+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:52:28.201+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:52:39.105+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:52:39.106+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:52:39.139+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:15.655+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:15.656+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:15.721+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:41.901+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:41.901+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:41.927+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:41.976+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:41.976+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:42.005+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:42.030+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:42.030+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:42.052+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:42.074+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:42.074+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:42.095+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:43.174+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:43.175+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:43.199+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:43.227+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:43.227+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:43.260+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:43.281+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:43.281+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:43.304+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:54:43.320+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:54:43.320+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:54:43.337+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:02.493+01:00  INFO 59119 --- [userService] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-12T21:55:11.975+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête POST /api/users - Création d'un nouvel utilisateur
+2026-01-12T21:55:11.976+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Création d'un nouvel utilisateur: user@gmail.com
+Hibernate: select u1_0.id from user u1_0 where u1_0.email=? limit ?
+2026-01-12T21:55:12.090+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Mot de passe encodé pour l'utilisateur: user@gmail.com
+Hibernate: insert into user (address,blood_type,email,hospital_id,password,phone_number,role,score,sex,username,ville_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2026-01-12T21:55:12.100+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Utilisateur créé avec succès - ID: 2, Email: user@gmail.com
+2026-01-12T21:55:18.148+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.AuthController          : Requête POST /api/auth/login - Tentative de connexion pour: user@gmail.com
+2026-01-12T21:55:18.149+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.AuthService    : Tentative de connexion pour: user@gmail.com
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+2026-01-12T21:55:18.274+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.AuthService    : Utilisateur connecté: user@gmail.com
+2026-01-12T21:55:18.274+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.AuthController          : Connexion réussie pour: user@gmail.com
+2026-01-12T21:55:18.325+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:18.325+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:18.343+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:20.716+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:20.716+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:20.734+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:22.316+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:22.316+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:22.336+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:22.351+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:22.351+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:22.371+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:22.387+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:22.387+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:22.406+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:24.192+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:24.192+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:24.209+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:26.967+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:26.967+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:26.997+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:27.520+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:27.520+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:27.544+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:27.561+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:27.561+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:27.581+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:27.597+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:27.597+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:27.616+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:30.411+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:30.411+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:30.431+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:32.600+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:32.600+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:32.616+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:32.625+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:32.626+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:32.651+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:33.135+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:33.135+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:33.153+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:33.155+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:33.155+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:33.174+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:35.994+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:35.994+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:36.007+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:36.009+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:36.009+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:36.026+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:40.296+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:40.296+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:40.332+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:40.354+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:40.354+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:40.373+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:40.390+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:40.390+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:40.408+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:48.098+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.AuthController          : Requête POST /api/auth/login - Tentative de connexion pour: hospital@gmail.com
+2026-01-12T21:55:48.099+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.AuthService    : Tentative de connexion pour: hospital@gmail.com
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.email=?
+2026-01-12T21:55:48.222+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.AuthService    : Utilisateur connecté: hospital@gmail.com
+2026-01-12T21:55:48.222+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.AuthController          : Connexion réussie pour: hospital@gmail.com
+2026-01-12T21:55:48.274+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:48.274+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:48.302+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:48.333+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:48.333+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:48.355+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:48.372+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:48.372+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:48.392+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:48.411+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:48.411+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:48.428+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:55:54.770+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:55:54.771+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:54.788+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:55:54.790+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:55:54.790+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:55:54.810+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:00.077+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:00.077+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:00.088+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:00.090+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:00.091+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:00.107+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:00.159+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:00.159+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:00.170+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:00.172+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:00.172+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:00.189+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:02.011+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:02.012+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:02.025+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:02.027+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:02.027+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:02.044+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:02.091+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:02.091+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:02.103+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:02.105+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:02.105+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:02.122+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:04.673+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:04.673+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:04.709+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:04.733+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:04.734+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:04.754+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:04.772+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:04.772+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:04.795+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:06.124+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:06.124+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:06.149+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:06.167+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:06.167+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:06.192+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:06.207+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:06.207+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:06.223+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:09.402+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:09.402+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:09.425+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:09.459+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:09.459+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:09.476+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:09.495+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:09.495+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:09.512+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:09.524+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:09.524+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:09.539+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:14.439+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:14.439+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:14.464+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:14.479+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:14.479+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:14.498+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:14.515+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:14.515+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:14.531+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:16.604+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:16.604+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:16.628+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:16.645+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:16.646+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:16.667+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:16.682+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:16.682+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:16.701+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:32.011+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:32.012+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:32.033+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:34.136+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:34.136+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:34.158+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:34.162+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:34.162+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:34.194+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:34.233+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:34.233+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:34.249+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:34.251+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:34.251+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:34.271+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:38.456+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:38.457+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:38.485+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:38.490+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:38.490+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:38.524+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:56:38.567+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:56:38.567+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:38.580+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:56:38.582+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:56:38.582+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:56:38.600+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:05.112+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:05.113+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:05.174+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:06.402+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:06.402+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:06.430+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:08.274+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:08.274+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:08.295+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:08.298+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:08.298+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:08.324+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:08.362+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:08.362+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:08.379+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:08.381+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:08.381+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:08.398+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:10.254+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:10.254+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:10.281+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:10.305+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:10.305+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:10.322+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:10.386+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:10.386+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:10.394+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:10.402+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:10.402+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:10.416+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:12.154+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:12.154+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:12.167+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:12.167+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:12.174+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:12.180+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:12.195+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:12.196+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:12.212+01:00  INFO 59119 --- [userService] [nio-9091-exec-8] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:14.367+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:14.368+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:14.373+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:14.373+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:14.383+01:00  INFO 59119 --- [userService] [nio-9091-exec-9] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:14.384+01:00  INFO 59119 --- [userService] [io-9091-exec-10] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:14.392+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:14.392+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:14.407+01:00  INFO 59119 --- [userService] [nio-9091-exec-1] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:16.918+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:16.918+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:16.937+01:00  INFO 59119 --- [userService] [nio-9091-exec-2] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:19.297+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:19.297+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:19.318+01:00  INFO 59119 --- [userService] [nio-9091-exec-3] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:20.757+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:20.757+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:20.781+01:00  INFO 59119 --- [userService] [nio-9091-exec-4] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:20.799+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:20.799+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:20.830+01:00  INFO 59119 --- [userService] [nio-9091-exec-5] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
+2026-01-12T21:58:20.871+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.a.u.Controller.UserController          : Requête GET /api/users/2 - Récupération de l'utilisateur
+2026-01-12T21:58:20.872+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 2
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:20.887+01:00  INFO 59119 --- [userService] [nio-9091-exec-7] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 2
+2026-01-12T21:58:20.901+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.a.u.Controller.UserController          : Requête GET /api/users/1 - Récupération de l'utilisateur
+2026-01-12T21:58:20.902+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération de l'utilisateur avec l'ID: 1
+Hibernate: select u1_0.id,u1_0.address,u1_0.blood_type,u1_0.email,u1_0.hospital_id,u1_0.password,u1_0.phone_number,u1_0.role,u1_0.score,u1_0.sex,u1_0.username,u1_0.ville_id from user u1_0 where u1_0.id=?
+2026-01-12T21:58:20.937+01:00  INFO 59119 --- [userService] [nio-9091-exec-6] c.app.userService.Service.UserService    : Récupération réussie de l'utilisateur ID: 1
