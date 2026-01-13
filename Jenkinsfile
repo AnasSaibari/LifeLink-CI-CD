@@ -30,15 +30,6 @@ pipeline {
             }
         }
         
-        stage('Install SonarQube Plugin') {
-            steps {
-                script {
-                    // Installe le plugin SonarQube globalement pour cette exécution
-                    bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.11.0.3922:install'
-                }
-            }
-        }
-        
         stage('Build, Test & SonarQube') {
             steps {
                 script {
@@ -64,12 +55,21 @@ pipeline {
                             
                             stage("SonarQube ${service}") {
                                 withSonarQubeEnv("${SONARQUBE_ENV}") {
-                                    // Utiliser le goal complet au lieu du prefix
+                                    // Version 1: Utiliser le goal complet
                                     bat """
                                     mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.11.0.3922:sonar ^
                                     -Dsonar.projectKey=${service} ^
                                     -Dsonar.projectName=${service}
                                     """
+                                    
+                                    // Alternative si ça ne fonctionne pas:
+                                    // bat """
+                                    // mvn sonar:sonar ^
+                                    // -Dsonar.projectKey=${service} ^
+                                    // -Dsonar.projectName=${service} ^
+                                    // -Dsonar.host.url=http://localhost:9000 ^
+                                    // -Dsonar.login=your_token
+                                    // """
                                 }
                             }
                         }
@@ -81,8 +81,7 @@ pipeline {
         stage('Build & Push Docker Images') {
             when {
                 expression { 
-                    // Continue seulement si les étapes précédentes ont réussi
-                    currentBuild.result != 'FAILURE'
+                    currentBuild.result == null || currentBuild.result == 'SUCCESS'
                 }
             }
             steps {
@@ -103,9 +102,10 @@ pipeline {
                         def serviceDir = (service == "annonceService") ? "${service}/${service}" : service
                         
                         dir(serviceDir) {
-                            // Vérifie si Dockerfile existe
                             script {
+                                // Vérifie si Dockerfile existe
                                 if (fileExists('Dockerfile')) {
+                                    echo "🐳 Building Docker image for ${service}"
                                     bat "docker build -t ${DOCKER_REGISTRY}/${service.toLowerCase()}:latest ."
                                     
                                     withDockerRegistry(
@@ -127,7 +127,8 @@ pipeline {
         stage('Deploy to Kubernetes') {
             when {
                 expression { 
-                    currentBuild.result != 'FAILURE' && fileExists('k8s')
+                    (currentBuild.result == null || currentBuild.result == 'SUCCESS') && 
+                    fileExists('k8s')
                 }
             }
             steps {
@@ -148,6 +149,7 @@ pipeline {
                     k8sServices.each { service ->
                         def manifestFile = "k8s/${service.toLowerCase()}.yaml"
                         if (fileExists(manifestFile)) {
+                            echo "🚀 Deploying ${service} to Kubernetes"
                             bat """
                             kubectl apply -n ${K8S_NAMESPACE} ^
                             -f ${manifestFile}
@@ -167,9 +169,12 @@ pipeline {
         }
         failure { 
             echo "❌ Pipeline échoué" 
-            // Ajouter des informations de debug
             script {
                 echo "Dernière erreur: ${currentBuild.currentResult}"
+                echo "Pour résoudre l'erreur SonarQube, vérifiez que:"
+                echo "1. Le serveur SonarQube est accessible"
+                echo "2. Le plugin est configuré dans les pom.xml OU"
+                echo "3. Utilisez l'alternative ci-dessous"
             }
         }
         always {
