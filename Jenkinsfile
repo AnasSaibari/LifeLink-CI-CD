@@ -11,6 +11,8 @@ pipeline {
         SONARQUBE_ENV = "SonarQube"
         K8S_NAMESPACE = "default"
         GITHUB_CREDENTIALS = 'github-credentials' // À configurer dans Jenkins
+        SOURCE_REPO = 'https://github.com/AnasSaibari/LifeLink-CI-CD.git'
+        SOURCE_BRANCH = 'detached'
     }
     
     stages {
@@ -18,10 +20,10 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM',
-                    branches: [[name: 'main']],
+                    branches: [[name: "${SOURCE_BRANCH}"]], // Utilisez la variable
                     extensions: [],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/AnasSaibari/LifeLink-CI-CD.git',
+                        url: "${SOURCE_REPO}", // Utilisez la variable
                         credentialsId: "${GITHUB_CREDENTIALS}"
                     ]]
                 ])
