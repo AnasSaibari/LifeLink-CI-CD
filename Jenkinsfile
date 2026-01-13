@@ -10,7 +10,7 @@ pipeline {
         DOCKER_REGISTRY = "anassabari"
         SONARQUBE_ENV = "SonarQube"
         K8S_NAMESPACE = "default"
-        GITHUB_CREDENTIALS = 'github-credentials' // À configurer dans Jenkins
+        GITHUB_CREDENTIALS = 'github-credentials'
         SOURCE_REPO = 'https://github.com/AnasSaibari/LifeLink-CI-CD.git'
         SOURCE_BRANCH = 'detached'
     }
@@ -20,10 +20,10 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM',
-                    branches: [[name: "${SOURCE_BRANCH}"]], // Utilisez la variable
+                    branches: [[name: "${SOURCE_BRANCH}"]],
                     extensions: [],
                     userRemoteConfigs: [[
-                        url: "${SOURCE_REPO}", // Utilisez la variable
+                        url: "${SOURCE_REPO}",
                         credentialsId: "${GITHUB_CREDENTIALS}"
                     ]]
                 ])
@@ -46,15 +46,15 @@ pipeline {
                     ]
                     
                     services.each { service ->
-                        dir("backend/${service}") {
+                        def serviceDir = (service == "annonceService") ? "${service}/${service}" : "backend/${service}"
+                        
+                        dir(serviceDir) {
                             stage("Build ${service}") {
-                                // Utiliser bat pour Windows au lieu de sh
                                 bat "mvn clean verify"
                             }
                             
                             stage("SonarQube ${service}") {
                                 withSonarQubeEnv("${SONARQUBE_ENV}") {
-                                    // Utiliser ^ pour les continuations de ligne sur Windows
                                     bat """
                                     mvn sonar:sonar ^
                                     -Dsonar.projectKey=${service} ^
@@ -84,18 +84,10 @@ pipeline {
                     ]
                     
                     services.each { service ->
-                        def serviceDir = "${service}"
-                        
-                        // Cas particulier pour annonceService
-                        if (service == "annonceService") {
-                            serviceDir = "${service}/${service}"
-                        }
+                        def serviceDir = (service == "annonceService") ? "${service}/${service}" : service
                         
                         dir(serviceDir) {
-                            // Utiliser bat pour Windows
-                            bat """
-                            docker build -t ${DOCKER_REGISTRY}/${service.toLowerCase()}:latest .
-                            """
+                            bat "docker build -t ${DOCKER_REGISTRY}/${service.toLowerCase()}:latest ."
                             
                             withDockerRegistry(
                                 credentialsId: 'dockerhub-creds',
@@ -112,7 +104,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 script {
-                    def services = [
+                    def k8sServices = [
                         "annonce-donation-services",
                         "annonce-service",
                         "chat-service",
@@ -125,8 +117,7 @@ pipeline {
                         "user-service"
                     ]
                     
-                    services.each { service ->
-                        // Utiliser bat pour Windows
+                    k8sServices.each { service ->
                         bat """
                         kubectl apply -n ${K8S_NAMESPACE} ^
                         -f k8s/${service.toLowerCase()}.yaml
@@ -138,11 +129,7 @@ pipeline {
     }
     
     post {
-        success {
-            echo "🎉 Pipeline terminé avec succès"
-        }
-        failure {
-            echo "❌ Pipeline échoué"
-        }
+        success { echo "🎉 Pipeline terminé avec succès" }
+        failure { echo "❌ Pipeline échoué" }
     }
 }
