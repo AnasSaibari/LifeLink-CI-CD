@@ -21,7 +21,7 @@ pipeline {
                     branches: [[name: 'main']],
                     extensions: [],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/AnasSaibari/blood-donation.git',
+                        url: 'https://github.com/AnasSaibari/LifeLink-CI-CD.git',
                         credentialsId: "${GITHUB_CREDENTIALS}"
                     ]]
                 ])
