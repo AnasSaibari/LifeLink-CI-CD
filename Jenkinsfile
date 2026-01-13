@@ -30,6 +30,15 @@ pipeline {
             }
         }
         
+        stage('Install SonarQube Plugin') {
+            steps {
+                script {
+                    // Installe le plugin SonarQube globalement pour cette exécution
+                    bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.11.0.3922:install'
+                }
+            }
+        }
+        
         stage('Build, Test & SonarQube') {
             steps {
                 script {
@@ -55,8 +64,9 @@ pipeline {
                             
                             stage("SonarQube ${service}") {
                                 withSonarQubeEnv("${SONARQUBE_ENV}") {
+                                    // Utiliser le goal complet au lieu du prefix
                                     bat """
-                                    mvn sonar:sonar ^
+                                    mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.11.0.3922:sonar ^
                                     -Dsonar.projectKey=${service} ^
                                     -Dsonar.projectName=${service}
                                     """
@@ -69,6 +79,12 @@ pipeline {
         }
         
         stage('Build & Push Docker Images') {
+            when {
+                expression { 
+                    // Continue seulement si les étapes précédentes ont réussi
+                    currentBuild.result != 'FAILURE'
+                }
+            }
             steps {
                 script {
                     def services = [
@@ -87,13 +103,20 @@ pipeline {
                         def serviceDir = (service == "annonceService") ? "${service}/${service}" : service
                         
                         dir(serviceDir) {
-                            bat "docker build -t ${DOCKER_REGISTRY}/${service.toLowerCase()}:latest ."
-                            
-                            withDockerRegistry(
-                                credentialsId: 'dockerhub-creds',
-                                url: ''
-                            ) {
-                                bat "docker push ${DOCKER_REGISTRY}/${service.toLowerCase()}:latest"
+                            // Vérifie si Dockerfile existe
+                            script {
+                                if (fileExists('Dockerfile')) {
+                                    bat "docker build -t ${DOCKER_REGISTRY}/${service.toLowerCase()}:latest ."
+                                    
+                                    withDockerRegistry(
+                                        credentialsId: 'dockerhub-creds',
+                                        url: ''
+                                    ) {
+                                        bat "docker push ${DOCKER_REGISTRY}/${service.toLowerCase()}:latest"
+                                    }
+                                } else {
+                                    echo "⚠️ Dockerfile not found in ${serviceDir}, skipping Docker build"
+                                }
                             }
                         }
                     }
@@ -102,6 +125,11 @@ pipeline {
         }
         
         stage('Deploy to Kubernetes') {
+            when {
+                expression { 
+                    currentBuild.result != 'FAILURE' && fileExists('k8s')
+                }
+            }
             steps {
                 script {
                     def k8sServices = [
@@ -118,10 +146,15 @@ pipeline {
                     ]
                     
                     k8sServices.each { service ->
-                        bat """
-                        kubectl apply -n ${K8S_NAMESPACE} ^
-                        -f k8s/${service.toLowerCase()}.yaml
-                        """
+                        def manifestFile = "k8s/${service.toLowerCase()}.yaml"
+                        if (fileExists(manifestFile)) {
+                            bat """
+                            kubectl apply -n ${K8S_NAMESPACE} ^
+                            -f ${manifestFile}
+                            """
+                        } else {
+                            echo "⚠️ Kubernetes manifest not found: ${manifestFile}"
+                        }
                     }
                 }
             }
@@ -129,7 +162,18 @@ pipeline {
     }
     
     post {
-        success { echo "🎉 Pipeline terminé avec succès" }
-        failure { echo "❌ Pipeline échoué" }
+        success { 
+            echo "🎉 Pipeline terminé avec succès" 
+        }
+        failure { 
+            echo "❌ Pipeline échoué" 
+            // Ajouter des informations de debug
+            script {
+                echo "Dernière erreur: ${currentBuild.currentResult}"
+            }
+        }
+        always {
+            echo "📊 Build Status: ${currentBuild.currentResult}"
+        }
     }
 }
